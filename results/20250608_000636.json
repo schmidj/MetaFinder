@@ -1,0 +1,61 @@
+{
+    "basic_info": {
+        "basicInformation": {
+            "title": "Estimating angler effort and catch from a winter recreational fishery using a novel Bayesian methodology to integrate multiple sources of creel survey data",
+            "authors": [
+                "Caroline M. Tucker",
+                "Simone Collier",
+                "Geoffrey Legault",
+                "George E. Morgan",
+                "Derrick K. de Kerckhove"
+            ],
+            "publicationDates": {
+                "received": null,
+                "accepted": null,
+                "published": "14 January 2024"
+            },
+            "doi": null,
+            "keywords": [
+                "Survey design",
+                "Fisheries management",
+                "Catch rates",
+                "Fishing effort",
+                "Bayesian statistics"
+            ]
+        }
+    },
+    "data_info": {
+        "Data Information": {
+            "Variables measured/collected": [
+                "Angling party characteristics",
+                "Trip duration",
+                "Party size",
+                "Catch and harvest rates"
+            ],
+            "Spatial extent of the study": "Nipissing",
+            "Temporal extent of the study": "2023",
+            "Sampling resolution (spatial and temporal)": "Daily",
+            "Sample size": {
+                "Access creel surveys": 323,
+                "Roving creel surveys": 305,
+                "Aerial surveys": 8
+            },
+            "Data collection methods": [
+                "Access creel surveys",
+                "Roving creel surveys",
+                "Aerial surveys"
+            ],
+            "Data sources": [
+                "Access creel surveys",
+                "Roving creel surveys",
+                "Aerial surveys"
+            ],
+            "Any data limitations or constraints": [
+                "Roving-derived activity profile shows activity is more dispersed",
+                "Access-derived activity profile shows activity strongly peaking in the late afternoon",
+                "Roving-only model had the highest estimate of activity"
+            ]
+        }
+    },
+    "extraction_timestamp": "2025-06-08T00:06:36.931027"
+}

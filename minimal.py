@@ -277,6 +277,126 @@ def process_file(file_path):
         print(f"Error processing file: {str(e)}")
         return None, None
 
+def request_additional_variable(metadata, variable_name):
+    """
+    Request additional information about a specific variable from the LLM.
+    
+    Args:
+        metadata (dict): The current metadata dictionary
+        variable_name (str): The name of the variable to get more information about
+    """
+    prompt = f"""Please analyze the research paper and provide detailed information about the following variable: {variable_name}
+    
+    Please provide the information in JSON format with the following structure:
+    {{
+        "definition": "Clear definition of the variable",
+        "measurement_method": "How it was measured/collected",
+        "units": "Units of measurement if applicable",
+        "importance": "Why this variable is important in the study"
+    }}
+    
+    Return ONLY the JSON object, no additional text."""
+
+    response = prompt_llm(prompt)
+    additional_info = extract_json_from_response(response)
+    
+    if additional_info:
+        # Add the new information to the metadata
+        if 'additional_variables' not in metadata:
+            metadata['additional_variables'] = {}
+        metadata['additional_variables'][variable_name] = additional_info
+        print(f"\nAdded information about {variable_name}:")
+        print(json.dumps(additional_info, indent=4))
+    else:
+        print(f"\nCould not extract additional information about {variable_name}")
+
+def remove_variable(metadata, variable_path):
+    """
+    Remove a specific variable from the metadata.
+    
+    Args:
+        metadata (dict): The current metadata dictionary
+        variable_path (str): The path to the variable to remove (e.g., 'data_info.variables')
+    """
+    parts = variable_path.split('.')
+    current = metadata
+    
+    try:
+        # Navigate to the parent of the variable to remove
+        for part in parts[:-1]:
+            current = current[part]
+        
+        # Remove the variable
+        variable_name = parts[-1]
+        if variable_name in current:
+            removed_value = current.pop(variable_name)
+            print(f"\nRemoved {variable_path}")
+            print("Removed value:", json.dumps(removed_value, indent=4))
+        else:
+            print(f"\nVariable {variable_path} not found")
+    except KeyError:
+        print(f"\nError: Could not find path to {variable_path}")
+    except Exception as e:
+        print(f"\nError: {str(e)}")
+
+def interactive_query(metadata):
+    """
+    Allow users to interactively query the extracted metadata.
+    
+    Args:
+        metadata (dict): The extracted metadata dictionary
+    """
+    print("\nInteractive Query Mode")
+    print("Available sections: basic_info, data_info")
+    print("Type 'exit' to quit or 'help' for available commands")
+    
+    while True:
+        query = input("\nEnter your query (e.g., 'basic_info.title', 'data_info.variables', 'add variable', 'remove variable'): ").strip()
+        
+        if query.lower() == 'exit':
+            break
+        elif query.lower() == 'help':
+            print("\nAvailable commands:")
+            print("- Type a path to access nested data (e.g., 'basic_info.title')")
+            print("- Type 'show all' to display all metadata")
+            print("- Type 'add variable' to request additional information about a variable")
+            print("- Type 'remove variable' to remove a specific variable")
+            print("- Type 'exit' to quit")
+            print("- Type 'help' to show this help message")
+            continue
+        elif query.lower() == 'show all':
+            print("\nAll Metadata:")
+            print(json.dumps(metadata, indent=4))
+            continue
+        elif query.lower() == 'add variable':
+            variable_name = input("Enter the name of the variable to get more information about: ").strip()
+            request_additional_variable(metadata, variable_name)
+            continue
+        elif query.lower() == 'remove variable':
+            variable_path = input("Enter the path of the variable to remove (e.g., 'data_info.variables'): ").strip()
+            remove_variable(metadata, variable_path)
+            continue
+        
+        # Split the query into parts
+        parts = query.split('.')
+        current = metadata
+        
+        try:
+            # Navigate through the nested dictionary
+            for part in parts:
+                current = current[part]
+            
+            # Print the result
+            if isinstance(current, dict):
+                print("\nResult:")
+                print(json.dumps(current, indent=4))
+            else:
+                print("\nResult:", current)
+        except KeyError:
+            print(f"Error: Could not find '{query}' in the metadata")
+        except Exception as e:
+            print(f"Error: {str(e)}")
+
 if __name__ == "__main__":
     # args on which to run the script
     parser = argparse.ArgumentParser(description="Extract metadata from research papers using LLM")
@@ -284,10 +404,15 @@ if __name__ == "__main__":
                       help="Together API key for LLM access")
     parser.add_argument("-f", "--file", type=str, required=True,
                       help="Path to the research paper text file")
+    parser.add_argument("-i", "--interactive", action="store_true",
+                      help="Enable interactive query mode")
     args = parser.parse_args()
 
     # Initialize the Together client
     client = Together(api_key=args.api_key)
 
     # Process the file
-    process_file(args.file)
+    metadata, output_file = process_file(args.file)
+    
+    if metadata and args.interactive:
+        interactive_query(metadata)
