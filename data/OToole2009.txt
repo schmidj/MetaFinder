@@ -1,0 +1,1076 @@
+The Effect of Shoreline Recreational Angling Activities on Aquatic
+and Riparian Habitat Within an Urban Environment:
+Implications for Conservation and Management
+Amanda C. O’Toole Æ Kyle C. Hanson Æ
+Steven J. Cooke
+Received: 1 June 2008 / Accepted: 2 April 2009 / Published online: 19 May 2009
+Ó Springer Science+Business Media, LLC 2009
+Abstract There is growing concern that recreational
+shoreline angling activity may negatively impact littoral
+and riparian habitats independent of any direct or indirect
+influences of fish harvest or fishing mortality through
+mechanisms such as disturbance (e.g., trampling, erosion)
+and pollution (e.g., littering). We sampled a suite of aquatic
+and terrestrial variables (i.e., water quality, aquatic and
+terrestrial macrophytes, soil compaction, anthropogenic
+refuse) at 14 high shoreline angling-activity sites (identi-
+fied by way of interviews with conservation officers and
+angling clubs) within an urban area (Ottawa, Canada). For
+each high angling-activity site, a nearby corresponding low
+angling-activity site was sampled for comparison. We
+found that the percentage of barren area and soil compac-
+tion were greater in areas of high angling activity compared
+with areas that experienced relatively low angling activity.
+In addition, terrestrial and aquatic macrophyte density,
+height, and diversity were lower at high angling-activity
+sites. Angling- and non-angling-related litter was present in
+large quantities at each of the high angling-activity sites,
+and comparatively little litter was found at low angling-
+activity sites. Collectively, these findings indicate that
+shoreline angling does alter the riparian environment,
+contributing to pollution and environmental degradation in
+areas of high angling intensity. With growing interest in
+providing urban angling opportunities and in response to
+increasing interest in developing protected areas and parks,
+a better understanding of the ecologic impacts of shoreline
+angling is necessary to address multiuser conflicts, to
+develop angler outreach and educational materials, and to
+optimize management of angling effort to maintain eco-
+logic integrity of riparian and aquatic ecosystems.
+Keywords Shoreline angling  Conservation  Riparian 
+Ecosystem health  Soil compaction  Angling litter 
+Macrophyte
+Introduction
+Globally, there is increasing evidence that recreational
+angling is contributing to decreased aquatic ecosystem
+health (Cooke and Cowx 2006). Although recreational
+fishing may be considered a relatively low-impact activity in
+terms of environmental degradation, the potential impacts of
+angling are often underestimated (Post and others 2002;
+Cooke and Cowx 2004, 2006; Lewin and others 2006).
+Participation rates vary extensively throughout the world
+(Arlinghaus and Cooke 2008); however, overall global
+estimates suggest that as many as 727 million anglers par-
+ticipate in recreational fishing annually (Cooke and Cowx
+2004). In Canada alone, [3.2 million people engage in
+angling activities each year (Department of Fisheries and
+Oceans Canada 2007). In the United States, this number is
+closer to 34 million (United States Fish and Wildlife Service
+2001). With the bulk of human populations focused in urban
+centres, participation in urban recreational fishing activities
+is often high, and these recreational fisheries provide
+important social and economic benefits because many cities
+offer convenient access to shoreline fishing sites where
+anglers of all ages and ability levels may participate in
+A. C. O’Toole  S. J. Cooke (&)
+Institute of Environmental Science, Carleton University,
+Ottawa, ON K1S-5B6, Canada
+e-mail: steven_cooke@carleton.ca
+A. C. O’Toole  K. C. Hanson  S. J. Cooke
+Fish Ecology and Conservation Physiology Laboratory,
+Department of Biology, Carleton University, Ottawa,
+ON K1S-5B6, Canada
+123
+Environmental Management (2009) 44:324–334
+DOI 10.1007/s00267-009-9299-3
+recreational fishing activities (Fedler and Ditton 1994;
+Schramm and Edwards 1994). Because of the potential
+cumulative effects associated with recreational angling,
+there is cause for concern in terms of conservation and
+maintenance of aquatic and adjacent terrestrial (e.g.,
+shorelines, coasts, riparian areas) ecosystems.
+To date, much work on the effects of recreational
+angling has focused on interactions between the angler and
+the individual fish that are targeted or captured either
+intentionally or as by-catch, including those that are har-
+vested as well as those caught and released. More than 200
+studies have focused on the injury, stress, and mortality
+associated with angling and releasing fish relative to factors
+such as gear type, environmental conditions, and angler
+behaviour (reviewed in Arlinghaus and others 2007).
+Clearly, harvest can result in fishery declines because this
+is increasingly being observed in coastal and inland rec-
+reational fisheries (Post and others 2002; Coleman and
+others 2004). However, many of these fish are released
+(global estimates suggest release rates of 60% [Cooke and
+Cowx 2004]); thus, unintentional mortality may result. In
+addition, fishery-induced selectivity may influence size and
+age structure of fish populations, genetic variability, evo-
+lutionary changes, and ecosystem trophic cascades (Lewin
+and others 2006).
+However, like the commercial fishing sector (Dayton
+and others 2005), broader environmental impacts are
+associated with recreational fishing in freshwater systems
+that extend beyond impacts on individual fish or fish
+populations as a direct result of harvest or fishing mortality.
+For example, anthropogenic debris along shorelines and in
+adjacent water bodies have a negative impact on the local
+environment (Cryer and others 1987; Radomski and others
+2006). Loss of fishing gear (e.g., line, lures, hooks, lead
+weights) along shorelines can affect both the substrate in
+which it is deposited as well as wildlife present in the area
+(Forbes 1986; Cryer and others 1987; Lewin and others
+2006; Radomski and others 2006). Lead has a slow dis-
+solution rate and a high stability in sediment, leading to
+ingestion by waterfowl, which subsequently may suffer the
+effects of lead poisoning (Cryer and others 1987; Scheu-
+hammer and others 2003). In addition, waterfowl have also
+been shown to become entangled in discarded fishing line
+(Cryer and others 1987; Franson and others 2003).
+Areas that experience high fishing effort may also be
+subjected to considerable shoreline changes because of
+general human activity, which can lead to a cascade of
+deleterious changes in both the terrestrial and aquatic
+environments. Increased foot traffic into angling access
+points could potentially lead to removal of vegetation (Cole
+1987; Marion and Cole 1996; Mu¨ller and others 2003), loss
+of plant diversity (Cole 1987; Ros and others 2004), soil
+compaction (Marion and Cole 1996; Roovers and others
+2004; Andre´s-Abella´n and others 2005), and erosion, fac-
+tors that have rarely been studied in the context of recre-
+ational fishing (Cooke and Cowx 2006; Lewin and others
+2006) but are known in terms of hiking and camping
+impacts (reviewed in Sun and Walsh 1998). In turn,
+because riparian vegetation is important in providing
+overhead cover and shade for fish and also in anchoring
+soil, riparian disturbance may lead to increased shoreline
+erosion as well as decreased habitat complexity (Delong
+and Brusven 1991; Schiemer and others 1995; Schindler
+and Scheuerell 2002). Soil compaction increases bulk
+density and decreases soil porosity (Lei 2004), further
+contributing to erosion processes, surface runoff into
+nearby watersheds, and water-quality degradation (Koz-
+lowski 1999). Subsequently, poor water quality can have
+detrimental effects on the health, distribution, and abun-
+dance of aquatic flora and fauna (Miner and Stein 1996).
+Highly turbid water can decrease sunlight penetration into
+the water column, restricting submergent plant growth,
+obstructing fish gills (Sutherland and Meyer 2008), and
+affecting predator–prey interactions (Miner and Stein
+1996). Dissolved oxygen is a major limiting factor for fish,
+with low levels having significant physiologic effects
+(Kramer 1987; Kruk 2007). With the removal of shoreline
+vegetation at angling access points, shade in nearshore
+areas may be decreased, thus increasing water temperatures
+while locally decreasing dissolved oxygen levels. The
+ultimate impacts of recreational angling activity on the
+abiotic environment may lead to short- and long-term
+impacts on fish populations and aquatic ecosystems
+because of changes in the structure and condition of these
+systems (Lewin and others 2006) as well as to the broader
+interconnected terrestrial-aquatic system.
+In marine systems, protected areas and zoning are being
+used to regulate human use and activities. However, similar
+efforts have not been widely used in freshwater systems
+(Suski and Cooke 2007), although some aquatic areas are
+protected by being contained within terrestrial protected
+areas. At present, however, there is insufficient information
+on the ecologic and environmental consequences of
+shoreline angling to optimize the management of angling
+effort to maintain the ecologic integrity of riparian and
+aquatic ecosystems. With growing emphasis on creating
+recreational fishing opportunities in or near urban centres,
+there is a need for information on the potential environ-
+mental consequences of recreational fishing to ensure that
+the ecologic integrity of riparian systems is maintained.
+Hence, the objective of this study was to evaluate links
+between shoreline angling and changes in aquatic and
+shoreline systems to determine the potential ecologic
+impacts of shoreline angling in and near a major urban
+centre in North America. We predicted that areas experi-
+encing high frequencies of angling activity might be
+Environmental Management (2009) 44:324–334 325
+123
+subject to increased levels of ecologic degradation com-
+pared with areas not exposed to the same degree of
+anthropogenic disturbance. We expected to see decreases
+in water quality, evidence of anthropogenic waste,
+decreased riparian vegetative cover (resulting in greater
+barren area and soil compaction), and lower fish diversity
+in such areas.
+Methods
+Study Site
+Between July 16 and 27, 2007, we sampled a set of 14
+shoreline angling-activity sites and 14 corresponding low
+angling-activity sites (28 sites in total) in the Ottawa,
+Ontario, and Gatineau, Quebec, regions of Canada. The
+greater Ottawa-Gatineau metropolitan area has a population
+[1.3 million people, and 20% of urban land use in the
+region is devoted to parks and green space (City of Ottawa
+Census Data 2006). The Ottawa-Gatineau region has a
+number of warm-water lakes and large rivers, most of which
+are dominated by fish from the family Centrarchidae.
+Centrarchids (including smallmouth bass [Micropterus
+dolomieu], largemouth bass [Micropterus salmoides],
+pumpkinseed [Lepomis gibbosus], bluegill Lepomis mac-
+rochirus], and black crappie [Pomoxis nigromaculatus]) as
+well as other members of the local fish fauna (including
+common carp [Cyprinus carpio], channel catfish [Ictalurus
+punctatus], northern pike [Esox lucius], muskellunge Esox
+masquinongy], and walleye [Sander vitreus]) can be easily
+angled from shore. Local municipalities as well as the pro-
+vincial fish and wildlife agency (i.e., the Ontario Ministry of
+Natural Resources) have developed maps and fishing guides
+specifically intended to facilitate shoreline angling in and
+around this urban area. Because the goal of the study was to
+evaluate the impacts of shoreline fishing activity, it was
+necessary to identify locales where this activity was com-
+mon. It is also important to recognize that virtually all
+shorelines are somewhat accessible to anglers; however,
+there is clearly a range of fishing activity across locations.
+Initially, a local conservation officer and local anglers
+were consulted to gain information about locations of
+popular shoreline angling locations. Subsequently, each
+site was visited to determine suitability for inclusion in the
+study (i.e., to evaluate whether there were signs of angler
+use). Sites with recent evidence of shoreline angling (bar-
+ren and compacted soil, trampled vegetation, presence of
+fishing-related debris, etc.) were designated as treatment
+sites and eventually sampled. Sites with artificially hard-
+ened shorelines, docks, and cement wall structures were
+avoided because of the impossibility of measuring some
+variables (e.g., soil compaction, vegetation, etc.) at these
+locales. Furthermore, site selection was focused at loca-
+tions where there was minimal evidence of other human
+use (e.g., dog walking, canoe launching), which would
+confound the study. However, it is important to note that
+for both high angling- and low angling-activity sites, it is
+possible that other human use occurs. For comparison, a
+low angling-activity site (control) was selected 25 m away
+from each high angling-activity site (direction along the
+shoreline in relation to the high angling-activity site was
+determined randomly). The low angling-activity sites were
+relatively undisturbed compared with the associated high
+angling-activity sites, and no anglers were noted at these
+locations. In total, 14 pairs of high angling activity-sites
+and associated control sites were sampled (7 located on the
+Rideau River, 6 on the Ottawa River, and 1 on Dow’s
+Lake). The majority of the sites sampled were lotic sys-
+tems; however, water velocities at these sites were low
+enough to be considered comparable with the more lentic
+sites sampled.
+Data Collection
+At each site, both aquatic and terrestrial sampling was
+conducted to detect differences in five suites of variables
+corresponding to water quality, soil compaction, discarded
+litter, macrophyte density and abundance, and fish com-
+munity. In high angling-activity areas, onshore sampling
+was centred at the area that would most likely be where an
+angler would stand while fishing. To quantify the close
+range and immediate effects of angling activity, such as
+soil compaction and discarded litter, a 0.25-m 2 quadrat was
+placed at the location where an angler would most likely
+position his or her feet while fishing (the ‘‘angler stand’’).
+A soil sample was taken from the centre of the angler stand
+using a 100-cm3 soil corer. Each soil sample was preserved
+in an airtight bag, later dried in an oven for 42 h at 85°C,
+and then weighed to the closest tenth of a gram to deter-
+mine bulk density (cm 3 /g). In addition, we noted the per-
+centage of barren area as well as the number of species and
+height of the four tallest plants of onshore plants found
+within the quadrat. A second, larger onshore 6-m 2 quadrat
+was set up to quantify the effects of angling within the area
+in which a typical fishing rod would reach. Percentage of
+barren area, number of plant species, and the height of the
+four tallest plants were measured within the 6-m 2 quadrat.
+We collected litter (both angling-specific [e.g., lure pack-
+aging, worm containers] and non-angling-specific [e.g.,
+pop cans, cigarette butts]) within the 6-m 2 quadrat as well
+as the 0.25-m 2 quadrat. The weight of each piece of litter
+was determined to the closest tenth of a gram, and
+the lengths of fishing line fragments were measured to
+the nearest centimetre. Low angling-activity sites were
+sampled in the same manner, although the 0.25-m 2 quadrat
+326 Environmental Management (2009) 44:324–334
+123
+was randomly placed rather than centred on an area of
+angler activity.
+Aquatic sampling was conducted at three distances (0, 5,
+and 10 m from the water’s edge) perpendicular to the
+shore, in line with the designated angler standing position.
+At each sampling distance, a 0.25-m 2 quadrat was placed
+on the bottom to measure variables at those immediate
+locations. First, a water sample was obtained from each site
+to determine turbidity values (in nephelometric turbidity
+units [NTU]) using a turbidity meter (LaMotte model 2020,
+Chesterton, MD). Water temperature (°C) and dissolved
+oxygen (mg/L) readings were taken at each of the three
+distances from shore at a depth of 30 cm below the water’s
+surface using a handheld meter (YSI Model 85 Handheld
+Oxygen, Conductivity, Salinity, and Temperature System,
+Yellow Springs, OH). Within the 0.25-m 2 quadrat (at each
+site), a snorkeler measured depth, distance to the closest
+cover (from the centre of the quadrat), and type of cover.
+The types of cover included in the study were any in-water
+structure that fish could use for foraging activities and
+predator avoidance (e.g., aquatic macrophyte beds, boul-
+ders, large woody debris). Within the quadrat, macrophyte
+density, height of the four tallest individual macrophytes,
+and number of species (species richness) were quantified.
+Angling- and non-angling-specific litter was collected and
+processed in the same manner as previously described at
+each of the three 0.25-m 2 quadrats. Finally, shortly after
+sampling (so as to mitigate disturbances associated with
+sampling), a fish community survey of number of species
+and number of individuals was performed by the snorkeler
+(Dolloff and others 1996) within a 10 9 10-m quadrat
+extending out into the water, centred on the onshore angler
+standing position. The survey was completed by swimming
+the quadrat at a slow, regulated speed in 10-m long sections
+to cover the entire 100 m 2 area.
+Data Analysis
+Because there was nonnormal distribution of some com-
+ponents of the data set, a series of nonparametric Wilcoxon
+signed-rank tests were performed to compare differences
+between onshore and aquatic variables at high angling- and
+low angling-activity sites (Zar 1999). Fish diversity was
+assessed using the Shannon Wiener Index (H’), and dif-
+ferences were compared using Wilcoxon signed-rank test
+(Zar 1999). All analyses were conducted using the statis-
+tical software program JMP v. 7.0 (SAS Institute, Raleigh,
+NC), and results were assessed for significance at
+a = 0.05. Because there were multiple comparisons, we
+applied Bonferroni corrections to all variables, and both
+corrected and uncorrected alpha values are presented (see
+Tables 1 through 4). All values are presented as
+means ± SEs unless otherwise noted.
+Results
+Aquatic Variables
+Water-quality metrics (i.e., dissolved oxygen, turbidity,
+water temperature) were generally similar between high
+angling- and low angling-activity sites at 0, 5, and 10 m
+from shore (Table 1). Low angling-activity sites were
+characterized by increased numbers of aquatic macrophyte
+species, higher macrophyte densities (% cover), and greater
+macrophyte height (cm) directly along the shoreline (0 m
+from shore) compared with high angling-activity sites
+(number of species: W = -18.0, P = 0.008; density:
+W = -21.0, P = 0.012; height: W = -20.50, P = 0.012;
+Table 1). We did not detect differences in aquatic macro-
+phyte diversity, density, or height between high angling-
+and low angling-activity sites at 5 and 10 m from shore
+(Table 1).
+Terrestrial Variables
+Differences between high angling- and low angling-activ-
+ity sites were noted in all terrestrial variables measured
+within both the 6-m 2 and 0.25-m 2 quadrats (Table 2). The
+percentage of barren area was much higher in the high
+angling-activity sites compared with low angling-activity
+sites (0.25-m 2 quadrat: W = 45.5, P = 0.0002; 6-m 2
+quadrat: W = 45.5, P = 0.0002). High angling-activity
+sites had nearly 100% barren area in the 0.25-m 2 quadrat
+areas (Fig. 1a), and 6-m 2 quadrats in the high angling-
+activity areas had nearly four times the amount of barren
+area as the low angling-activity sites (Table 2). Plant
+height (mm) was higher in both the 0.25-m 2 and the 6-m 2
+quadrats at low angling-activity sites (0.25-m 2 quadrat:
+W = -44.0, P = 0.0007; 6-m 2 quadrat: W = -44.5,
+P = 0.0005; Table 2 and Fig. 1b). Low angling-activity
+sites typically contained more plant species (W = -45.5,
+P = 0.0002) within the 0.25-m 2 quadrats than did paired
+high angling-activity sites (Table 2 and Fig. 2a). Low
+angling-activity sites also had a higher percentage of nat-
+ural shoreline vegetation compared with high angling-
+activity sites (W = -39.0, P = 0.0005; Table 2 and
+Fig. 2b). Last, soil compaction was greater in high angling-
+than in low angling-activity sites as evidenced by differ-
+ences in soil bulk density (W = 15.0, P = 0.0391; Table 2
+and Fig. 2c).
+Litter
+The number of pieces of angling-related litter as well as the
+number of pieces of non-angling-specific litter was much
+higher at high angling-activity sites (angling-related litter:
+W = 44.5, P = 0.0005; non-angling-related litter: W = 45.5,
+Environmental Management (2009) 44:324–334 327
+123
+P = 0.0002; Table 3 and Fig. 3a). Correspondingly, weight
+(g) of both angling-related and non-angling-related litter
+was also higher at high angling-activity sites (weight of
+angling-related litter: W = 47.5, P = 0.0012; weight of
+non-angling-related litter: W = 47.5, P = 0.0012; Table 3
+and Fig. 3b). More discarded fishing line was found at high
+angling-activity sites. Indeed, the length of line was
+900 times longer at high angling- than low angling-activity
+sites (W = 45.5, P = 0.0002). The average length of fish-
+ing line segments found at the 14 high angling-activity sites
+was 906 ± 335 cm, and a total of 127 m of fishing line was
+found across all 14 locations. This compares with the
+Table 1 Comparison of aquatic variables between low angling- and high angling-activity sites in the Ottawa-Gatineau region a
+Variable Distance from shore
+(m)
+N LAA
+(median)
+HAA
+(median)
+LAA
+(mean ± SE)
+HAA
+(mean ± SE)
+W P
+Turbidity (NTU) 0 14 3.4 3.2 4.37 ± 1.10 3.94 ± 1.14 -1.50 0.951
+5 14 2.1 2.2 3.55 ± 1.28 3.16 ± 0.95 -18.50 0.261
+10 14 2.2 2.0 3.30 ± 1.10 3.10 ± 0.98 -12.50 0.463
+Dissolved oxygen (mg/L) 0 14 8.1 7.7 8.30 ± 0.37 8.07 ± 0.38 -30.50 0.056
+5 14 8.3 8.1 8.28 ± 0.39 8.20 ± 0.37 -0.50 0.988
+10 14 8.3 8.0 8.47 ± 0.43 8.25 ± 0.37 -17.50 0.289
+Temperature (°C) 0 14 23.9 24 24.37 ± 0.53 24.53 ± 0.48 23.00 0.115
+5 14 24 23.7 24.39 ± 0.35 24.21 ± 0.45 7.00 0.649
+10 14 24.1 23.7 22.74 ± 1.57 23.94 ± 0.38 -16.00 0.167
+Depth (cm) 0 14 20 20 19.54 ± 2.29 20.82 ± 2.04 2.00 0.915
+5 14 110 106.5 106.57 ± 2.98 114.31 ± 7.53 -1.00 0.964
+10 14 140 132.5 147.14 ± 18.43 161.15 ± 21.01 -2.00 0.916
+Distance to Cover (cm) 0 14 50 80 64.64 ± 20.60 117.62 ± 28.71 27.50 0.087
+5 14 40 30 63.14 ± 18.40 88.46 ± 37.19 -11.50 0.501
+10 14 50 40 78.07 ± 28.09 62.08 ± 20.65 -6.00 0.698
+No. macrophyte spp. 0 14 1 0 1.29 ± 0.34 0.43 ± 0.29 -18.00 0.008
+5 14 1 1 1.36 ± 0.39 0.43 ± 0.29 -2.50 0.805
+10 14 1 1 1.29 ± 0.34 0.79 ± 0.24 -10.50 0.285
+Macrophyte density (%
+cover)
+0 14 20 0 26.43 ± 7.53 1.86 ± 1.44 -21.00 0.012
+5 14 12.5 15 13.21 ± 3.80 26.36 ± 7.95 19.50 0.182
+10 14 8.5 11.5 22.29 ± 8.18 17.92 ± 5.19 -7.00 0.563
+Macrophyte height (cm) 0 14 98.1 0 223.80 ± 76.38 27.50 ± 17.61 -20.50 0.012
+5 14 313.5 210.5 235.11 ± 56.86 228.25 ± 63.56 6.00 0.677
+10 14 279.5 224 234.29 ± 60.69 228.25 ± 63.56 -0.50 1.00
+HAA high angling-activity site, LAA low angling-activity site
+a Analyses were conducted using Wilcoxon signed-rank test. Italicized statistical output indicate significant results (a = 0.05). Bonferroni
+corrections were applied, and significant values were evaluated at a = 0.006
+Table 2 Comparison of terrestrial variables between low angling- and high angling-activity sites in the Ottawa-Gatineau region a
+Variable N LAA (median) HAA (median) LAA (mean ± SE) HAA (mean ± SE) W P
+Barren area/0.25 m 2 (%) 14 25 99.9 38.21 ± 10.35 95.50 ± 2.19 45.50 0.0002
+Barren area/6 m 2 (%) 14 10 80 19.29 ± 4.50 76.00 ± 5.94 45.50 0.0002
+No. of plant species/0.25 m 2 14 3.5 1 4.50 ± 1.40 2.07 ± 1.13 -45.50 0.0002
+Plant height/0.25 m2 (mm) 14 170.4 1 214.10 ± 46.77 19.54 ± 9.24 -44.00 0.0007
+Plant height/6 m 2 (mm) 14 770.2 300 923.75 ± 109.66 330.98 ± 54.76 -44.50 0.0005
+Natural shoreline vegetation (%) 14 98 12.5 79.71 ± 8.94 18.29 ± 5.86 -39.00 0.0005
+Bulk density (g/cm) 8 1.12 1.43 1.02 ± 0.09 1.42 ± 0.09 15.00 0.0391
+HAA high angling-activity site, LAA low angling-activity site
+a Analyses were conducted using Wilcoxon signed-rank test. Italicized statistical output indicates significant results (a = 0.05). Bonferroni
+corrections were applied, and significant values (a = 0.007) are presented in bold
+328 Environmental Management (2009) 44:324–334
+123
+complete lack of fishing line found at any of the low
+angling-activity sites. The average number lead pieces
+found at high angling-activity sites was 0.86 ± 0.39 pieces,
+and the average weight of lead pieces collected at high
+angling-activity sites was 3.5 ± 1.85 g. We did not find any
+lead fishing gear at low angling-activity sites.
+Fish Species Metrics
+The most common fish species we encountered at each of
+the sites were mainly members of the centrarchid family
+(smallmouth bass, bluegill, and pumpkinseed), brown
+bullhead (Ameirurus nebulosus), yellow perch (Perca
+flavescens), and various cyprinids. Fish species richness
+and abundance were not different between sites of high and
+low angling activity (Table 4).
+Discussion
+Many urbanized regions offer opportunities for recreational
+fishing, with convenient access to shoreline angling sites
+suitable for anglers of varying age and experience (Sch-
+ramm and Edwards 1994). Our selection of sampling sites
+was based on several criteria, including evidence of tram-
+pling, soil compaction, decreased vegetation cover, and,
+most importantly, presence of angling-related waste. In
+addition, a conservation officer (who visits areas of high-
+angling intensity frequently to optimize enforcement and
+outreach efforts) and local anglers (involved in the lead-
+ership of local angling clubs) were consulted before the
+study, and their recommendations were used to select the
+locations of the study sites. However, our low angling-
+activity sites were always chosen randomly (25 m either
+upstream or downstream from high-angling sites) and
+served as relevant controls. It is important to note that
+although some sites also displayed evidence of other rec-
+reational use (canoe launching, dog walking), fishing
+activity was always apparent. We recognized that we were
+intentionally selecting high angling-activity sites and then
+identified the exact locations where we believed anglers
+stood to fish. Indeed, we often saw anglers at these sites
+before, during, or after the study. Conversely, we never
+saw anglers at the low angling-activity sites. As such, we
+believe that our site selection and sampling procedures
+were valid.
+The percentage of barren area in high angling-activity
+sites was considerably greater than at low angling-activity
+sites, which was likely caused by the increased foot traffic
+into angling access points. Increased foot traffic typically
+restricts plant growth (Cole 1987; Sun and Walsh 1998),
+decreases plant diversity (Ros and others 2004) and aver-
+age plant height, and leads to increased soil compaction
+(Manning 1979; Marion and Cole 1996; Andre´s-Abella´n
+and others 2005). In turn, decreased plant growth was
+correlated with decreased percentage of natural shoreline at
+sites of high angling activity (Table 2). Human disturbance
+caused by foot traffic was shown to affect soil compaction
+Barren Area (%)
+0
+20
+40
+60
+80
+100
+120
+0
+20
+40
+60
+80
+100
+120
+Height (mm)
+0
+100
+200
+300
+400
+500
+600
+0
+500
+1000
+1500
+2000
+A
+B
+Angling Activity Sites
+Low HighLow High
+W = 45.5
+P = 0.0002
+W = 45.5
+P = 0.0002
+0.25m 2 6m 2
+W = -44.0
+P = 0.0007
+W = -44.5
+P = 0.0005
+Fig. 1 Comparison of shoreline
+metrics for 0.25-m 2 and 6-m2
+quadrats for high angling- and
+low angling-activity sites using
+Wilcoxon signed rank tests
+(a = 0.007). a Barren area (%).
+b Average plant height (cm)
+Environmental Management (2009) 44:324–334 329
+123
+in a number of studies (Marion and Cole 1996; Andre´s-
+Abella´n and others 2005; Amrein and others 2005). And-
+re´s-Abella´n and others (2005) found that soil bulk density
+ranged from 1.43 to 1.48 g/cm 3 and that barren area was on
+average 61% in campsites with high levels of foot traffic.
+These values are similar to our findings that average bulk
+density values were 1.42 g/cm 3 at high angling-activity
+sites. Other studies have also shown that species richness
+and density of ground vegetation is decreased in areas that
+experience high recreational use (Marion and Cole 1996;
+Ros and others 2004; Amrein and others 2005).
+Aquatic macrophyte diversity, density, and height were
+greater at low angling-activity sites, but only in the areas
+near the shore. It is unclear whether anglers were the direct
+reason for the decrease in aquatic macrophyte abundance
+and size at high angling-activity sites or if anglers con-
+sciously choose these sites because of the lack of macro-
+phytes at that location. Slipke and others (1998) performed
+a creel survey in which they found that angler preference
+for abundance of aquatic macrophytes was dependent on
+the fish species targeted. Anglers targeting largemouth bass
+preferred a greater abundance of aquatic macrophytes, and
+anglers targeting other species preferred less macrophyte
+coverage at their fishing sites (Slipke and others 1998). In
+addition, anglers may be actively removing aquatic mac-
+rophytes while fishing (e.g., by unintentionally snagging
+macrophytes) because desiccated aquatic macrophytes
+were often observed at angling sites where they had been
+removed from fishing gear and discarded onshore. A
+decrease in macrophyte growth and diversity in nearshore
+high angling-activity sites may also be attributed to anglers
+wading into the water from the bank and trampling aquatic
+vegetation.
+Water quality did not vary between high angling- and
+low angling-activity sites (Table 1). One would expect that
+water quality would be degraded in areas exposed to high
+angling activity because other variables in these areas
+Species Richness
+0
+5
+10
+15
+20
+25
+Natural Shoreline (%)
+0
+20
+40
+60
+80
+100
+120
+Bulk Density (g/cm
+3 )
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+Angling Activity Sites
+Low High
+A
+B
+C
+W = -45.5
+P = 0.0002
+W = -39.0
+P = 0.0005
+W = 15.0
+P = 0.0391
+Fig. 2 Comparison of shoreline metrics for high angling- and low
+angling-activity sites using Wilcoxon signed rank tests. a Species
+richness (a = 0.007). b Natural shoreline (%; a = 0.007). c Soil bulk
+density (g/cm 3
+; a = 0.05)
+Table 3 Comparison of angling- and non-angling-related litter found at low angling- and high angling-activity sites in the Ottawa-Gatineau
+region a
+Variable N LAA
+(median)
+HAA
+(median)
+LAA
+(mean ± SE)
+HAA
+(median ± SE)
+W P
+Pieces of angling-related litter 14 0 9.5 2.67 ± 0.41 13.14 ± 3.26 44.50 0.0005
+Pieces of non-angling-related litter 14 0 6.5 5.00 ± 1.51 10.79 ± 2.73 45.50 0.0002
+Weight of angling-related litter (g) 14 0 6.03 0.22 ± 0.21 10.66 ± 3.53 47.50 0.0012
+Weight of non-angling-related litter (g) 14 0 11.58 11.90 ± 7.03 25.06 ± 7.55 47.50 0.0012
+Length of fishing line (cm) 14 0 540.9 0.00 ± 0.00 906 ± 335.7 45.5 0.0002
+No. of lead pieces 14 0 0 0.00 ± 0.00 0.86 ± 0.39 7.50 0.0625
+Weight of lead pieces (g) 14 0 0 0.00 ± 0.00 3.5 ± 1.85 7.50 0.0625
+HAA high angling-activity site, LAA low angling-activity site
+a Analyses were conducted using Wilcoxon signed-rank test. Italicized statistical output indicate significant results (a = 0.05). Bonferroni
+corrections were applied, and significant values (a = 0.013) are presented in bold
+330 Environmental Management (2009) 44:324–334
+123
+indicated ecologic disturbance (e.g., presence of litter,
+decreased plant cover, soil compaction). Water temperature
+may be affected by the extent of riparian vegetation,
+channel geometry, and aquatic macrophytes (LeBlanc and
+others 1996; King and Warburton 2007). It could be rea-
+sonable to expect that decreased shoreline vegetation as
+well as decreased aquatic macrophyte growth in high
+angling-activity areas would lead to locally increased water
+temperatures and therefore lower dissolved oxygen levels,
+especially in areas of slow-moving water. In nearshore
+areas of high angling activity, aquatic macrophyte growth
+was less than in nearshore areas of low angling activity.
+Because the presence of aquatic macrophytes is also
+associated with increased water clarity (Scheffer 1999), it
+could be expected that turbidity would be greater at high
+angling-activity sites. However, the similarities in water-
+quality metrics between high angling- and low angling-
+activity sites may simply be related to the majority of the
+sites being located on riverine systems (albeit with
+reasonably low velocities) and because paired sites were
+only separated by 25 m. Nonetheless, we focused on
+microscale differences, including areas right at the water–
+land interface, where we anticipated that effects would be
+detectable if they were present. In general, onshore areas
+seemed to experience greater disturbance from shoreline-
+angling activities than in-water zones. Metrics such as
+turbidity might be expected to vary more so between sites
+during or after rainfall when precipitation would mobilize
+silt in areas where there is decreased vegetation, particu-
+larly given that the soil was compacted so water infiltration
+would be decreased (Luke and others 2007).
+Overall, the amount of both angling- and non-angling-
+related litter was greater at high angling-activity sites. The
+presence of litter was apparent at each site that we visited
+because it was one of the defining criteria for our site
+selection. Although the most dominant type of angling-
+related litter was monofilament fishing line, discarded
+fishing gear packaging (e.g., worm containers, lure
+No. Pieces of Litter
+0
+10
+20
+30
+40
+50
+0
+5
+10
+15
+20
+25
+30
+35
+Weight (g)
+0
+10
+20
+30
+40
+50
+0
+20
+40
+60
+80
+100
+Angling Related Litter
+hgiHwoLhgiHwoL
+A
+B
+Angling Activity Sites
+W = 44.5
+P = 0.0005
+W = 45.5
+P = 0.0002
+W = 47.5
+P = 0.0012
+W = 47.5
+P = 0.0012
+Non-angling Related LitterFig. 3 Comparison of angling-
+with non-angling-related litter
+for high angling- and low
+angling-activity sites using
+Wilcoxon signed rank tests
+(a = 0.007 and a = 0.05,
+respectively). a Number of
+pieces of litter found within the
+6-m2 quadrat. b Average weight
+(g) of litter found within the 6-
+m 2 quadrat
+Table 4 Comparison of fish species diversity and number of individuals found at low angling- and high angling-activity sites in the Ottawa-
+Gatineau region a
+Variable N LAA (median HAA (median) LAA (mean ± SE) HAA (mean ± SE) W P
+Fish-species richness 14 2.5 3 2.5 ± 0.44 3.0 ± 0.62 8.00 0.266
+Total fish abundance 14 12 12.5 20.29 ± 6.42 22.64 ± 7.77 9.00 0.449
+HAA high angling-activity site, LAA low angling-activity site
+a Analyses were conducted using Wilcoxon signed-rank test (a = 0.05). Bonferroni corrections were applied, and significant values were
+evaluated at a = 0.03
+Environmental Management (2009) 44:324–334 331
+123
+packaging) made up 12% of the total number of pieces of
+discarded angling related litter. Several local tackle shops
+in Ottawa provide a refund for returning used Styrofoam
+worm containers in an effort to decrease littering; however,
+clearly more education is needed. To mitigate these issues,
+there may also be merit in selling tackle in bulk form
+without packaging as an additional means of decreasing
+litter potential. We found an average of 905 cm monofil-
+ament line at high angling-activity sites. Not only is dis-
+carded fishing line aesthetically unpleasing, it also has the
+potential to harm wildlife. Franson and others (2003) found
+that 235 individuals of 8 species of waterbirds sampled
+(both live birds and carcasses) across 25 states during
+5 years had fishing line entangled around their bodies, were
+embedded with hooks, or had ingested nonlead fishing
+litter. Presence of these materials was most apparent in
+waterbird species with large samples sizes ([50) of brown
+pelicans (Pelecanus occidentalis), double-crested cormo-
+rants (Phalacrocorax auritus), and common loons (Gavia
+immer). Cryer and others (1987) estimated that B13.7 m of
+fishing line was lost per angler, and Forbes (1986) found
+that the average length of line discarded around a small,
+coarse fishery lake to be 56 cm. Lead deposition can also
+pose a hazard to wildlife, especially to birds that ingest
+small stones and grit to aid digestion (Scheuhammer and
+others 2003). Lead poisoning in birds may result in lethal
+and sublethal effects, including decreased body weight,
+reproductive stress, and anemia (Scheuhammer and Norris
+1995; Kendall and others 1996). Franson and others (2003)
+also found that 3.5% of common loons and 2.7% of brown
+pelicans had ingested lead fishing weights. Although we
+did not find a difference in lead fishing tackle between our
+high angling- and low angling-activity sites, lead pieces
+were found at most of the high angling-activity sites. The
+amount of lead found during our study was considerably
+less compared with previous European studies in high
+angling-activity areas, such as that by Cryer and others
+(1987), who reported up to 298 lead sinkers/m 2
+, and by
+Forbes (1986), who found the average and total weight of
+lead pieces to be 0.81 g and 33.5 kg, respectively.
+Our results also showed a lack of difference in fish
+community metrics (species richness and abundance)
+between high angling- and low angling-activity sites. We
+also did not find a difference between the distances to cover
+between high angling- and low angling-activity sites.
+Foraging activities and predator avoidance are influenced
+by habitat complexity (Snickars and others 2004; Stuart-
+Smith and others 2007). Troutman and others (2007) found
+that aquatic macrophyte complexity was associated with
+greater fish diversity and density. We had expected to see
+decreases in fish community structure in high angling-
+activity areas as a result of decreased aquatic macrophyte
+growth and riparian cover (Tables 1, 2). We also predicted
+that poor water quality would have an impact on fish
+community health. High turbidity can obstruct gills and
+interfere with predator–prey interactions (Miner and Stein
+1996; Sutherland and Meyer 2008), whereas low levels of
+dissolved oxygen and sudden temperature changes can
+degrade physiologic condition as well as influence behav-
+iour and habitat selection (Fry 1971; Kramer 1987).
+Because we did not see a change in water quality and
+aquatic macrophyte growth in areas farther than 1 m from
+shore, it is not surprising that the fish community was
+similar between high angling- and low angling-activity
+sites.
+Management and Conservation Implications
+To mitigate the potential deleterious effects of shoreline
+angling, regulators must adopt a comprehensive approach
+that seeks to change angler attitudes and behaviour as well
+as encourage compliance with local regulations. There may
+also be a need to revise existing regulations or enact new
+policy to regulate angling effort. Angler education and
+outreach are key components to decreasing many delete-
+rious effects on the environment because changes in angler
+behaviour, especially with regard to discarded fishing
+equipment or other litter, are relatively straightforward
+solutions. Publication of educational material directed at
+anglers of all ages and experience levels must be made
+easily available. Information in this material should outline
+the potential for ecologic degradation because of shoreline
+angling as well as potential steps to mitigate the effects of a
+single individual. Similarly, regulators should encourage
+responsible angling behaviour through a few simple steps.
+Although the majority of the sites sampled were within
+close proximity to parks and recreational areas (walking
+and bicycle paths, parking lots), trash bins were not always
+within close range. A simple recommendation for litter
+reduction would be for the placement of bins at popular
+shoreline angling locations along with posted notices
+reminding users of the potentially harmful effects of dis-
+carding angling and non-angling waste. In addition, efforts
+to decrease packaging associated with fishing gear or
+providing incentives (e.g., deposits on Styrofoam worm
+containers) to return or recycle angling-related packaging
+would be worthwhile. It is important to note that there is
+also a trade-off between the broad-ranging social benefits
+of shoreline fishing and some of the ecologic impacts
+incurred by angling. Shoreline angling, especially in urban
+areas, provides people with a link to green space and a
+connection with the natural environment, valuable relaxa-
+tion time, and time spent with friends and families that may
+be otherwise impossible in highly developed areas (Fedler
+and Ditton 1994; Schramm and others 2003). As such, it
+must be recognized that there is intrinsic value in activities
+332 Environmental Management (2009) 44:324–334
+123
+so that shoreline angling must be preserved while mini-
+mizing potential environmental impacts.
+Mitigating environmental impacts may take the form of
+actions such as either formalizing high angling-activity
+areas (and perhaps build engineered structures such as
+docks or fishing platforms) or restricting angling activity
+along natural shorelines that are still relatively undisturbed.
+By protecting low-use areas, fish communities will likely
+benefit because the same species and abundance are found
+at high angling-activity sites where they are subject to
+greater fishing pressure. If a restorative approach is taken,
+the timescale for ecologic recovery for most high angling-
+activity sites is unknown. Further assessments must be
+completed before these areas can be effectively re-estab-
+lished. Furthermore, there is insufficient information on the
+ecologic and environmental consequences of shoreline
+angling to optimize effectively the management of angling
+effort to maintain ecologic integrity of riparian and aquatic
+ecosystems. Further research could include experimental
+designs involving the use of time-lapse cameras to evaluate
+actual user intensities at high-activity sites (i.e., angler use
+vs. other recreational activities, such as canoe launching or
+dog walking). The work presented here is intended to
+contribute to the deficiency in knowledge of ecologic and
+environmental effects of shoreline angling. We hoped that
+it will stimulate more research on this topic.
+Acknowledgments The authors thank Vivian Nguyen and Tobias
+Rapp for assistance with field data collection. We also thank Hedrik
+Wachelka, Grant Hopkins, and Lee Willard for advice and recom-
+mendations concerning the selection of sampling sites. We thank the
+Ontario Ministry of Natural Resources and Parks Canada for kindly
+providing research permits. This research activity was supported by
+the Canada Foundation for Innovation, the Ontario Research Fund,
+the Ontario Ministry of Research and Innovation (through an Early
+Researcher Award to S. J. C.), and Carleton University. This work
+was awarded the Rideau Valley Conservation Authority ‘‘Best Poster
+Award’’ (to A. O.). Naomi Cappuccino and members of the Fish
+Ecology and Conservation Physiology Laboratory kindly provided
+input on earlier drafts of the manuscript.
+References
+Amrein D, Rusterholz HP, Baur B (2005) Disturbance of suburban
+Fagus forests by recreational activities: effects on soil charac-
+teristics, above-ground vegetation and seed bank. Applied
+Vegetation Science 8:175–182
+Andre´s-Abella´n M, Del A´ lamo JB, Landete-Castillejos T, Lo´pez-
+Serrano FR, Garcı´a-Morote FA, Del Cerro-Barja A (2005)
+Impacts of visitors on soil and vegetation of the recreational area
+‘‘Nacimiento del Rio Mundo’’ (Castilla-La Mancha, Spain).
+Environmental Monitoring and Assessment 101:55–67
+Arlinghaus R, Cooke SJ (2008) Recreational fisheries: socio-eco-
+nomic importance, conservation issues, and management chal-
+lenges. In: Dickson B, Hutton JM, Adams WM (ed) Recreational
+hunting, conservation, and rural livelihoods: science and
+practice. Blackwell Science, Oxford, UK, pp 39–58
+Arlinghaus R, Cooke SJ, Lyman J, Policansky D, Schwab A, Suski C
+et al (2007) Understanding the complexity of catch-and-release
+in recreational fishing: an integrative synthesis of global
+knowledge from historical, ethical, social, and biological
+perspectives. Reviews in Fisheries Science 15:75–167
+City of Ottawa (2006) Ottawa Counts. City of Ottawa Statistics.
+Ottawa Ontario, Canada. Available at: http://www.ottawa.ca/
+city_services/statistics/counts/index_en.shtml. Accessed 9 January
+2008
+Cole DN (1987) Effects of three seasons of experimental trampling on
+five montane forest communities and a grassland in western
+Montana, USA. Biological Conservation 40:219–244
+Coleman F, Figueira WF, Ueland JS, Crowder LB (2004) The impact
+of United States recreational fisheries on marine fish populations.
+Science 305:1958–1960
+Cooke SJ, Cowx IG (2004) The role of recreational fishing in global
+fish crises. BioScience 54:857–859
+Cooke SJ, Cowx IG (2006) Contrasting recreational and commercial
+fishing: searching for common issues to promote unified
+conservation of fisheries resources and aquatic environments.
+Biological Conservation 128:93–108
+Cryer MJ, Corbett JJ, Winterbotham MD (1987) The deposition of
+hazardous litter by anglers at coastal and inland fisheries in
+South Wales. Journal of Environmental Management 25:125–
+135
+Dayton PK, Simon SF, Agardy MT, Hofman RJ (2005) Environ-
+mental effects of marine fishing. Aquatic Conservation: Marine
+and Freshwater Ecosystems 5:205–232
+Delong MD, Brusven MA (1991) Classification and spatial mapping
+of riparian habitat with applications toward management of
+streams impacted by nonpoint source pollution. Environmental
+Management 15:565–571
+Department of Fisheries and Oceans, Canada (2007) Report on the
+2005 Survey of Recreational Fisheries in Canada. Department of
+Fisheries and Oceans, Ottawa, Canada
+Dolloff A, Kershner J, Thurow R (1996) Underwater observation. In:
+Murphy BR, Willis DW (eds) Fisheries techniques, vol 2.
+American Fisheries Society, Bethesda, MD
+Fedler AJ, Ditton RB (1994) Understanding angler motivations in
+fisheries management. Fisheries 19:6–13
+Forbes IJ (1986) The quantity of lead shot, nylon fishing line and
+other litter discarded at a coarse fishing lake. Biological
+Conservation 38:21–34
+Franson JC, Hansen SP, Creekmore TE, Brand CJ, Evers DC, Duerr
+AE et al (2003) Lead fishing weights and other fishing tackle in
+selected waterbirds. Waterbirds 26:345–352
+Fry FE (1971) The effect of environmental factors on the physiology
+of fish. In: Hoar WS, Randall DJ (eds) Fish physiology,
+environmental relations and behaviour, vol 6. Academic Press,
+New York, NY, pp 1–98
+Kendall RJ, Lacher TE, Bunck C, Daniel B, Driver C, Grue CE et al
+(1996) An ecological risk assessment of lead shot exposure in
+non-waterfowl avian species: upland game birds and raptors.
+Environmental Toxicology and Chemistry 15:4–20
+King S, Warburton K (2007) The environmental preferences of three
+species of Australian freshwater fish in relation to the effects
+of riparian degradation. Environmental Biology of Fishes 78:
+307–316
+Kozlowski TT (1999) Soil compaction and growth of woody plants.
+Scandinavian Journal of Forest Research 14:596–619
+Kramer DL (1987) Dissolved oxygen and fish behavior. Environ-
+mental Biology of Fishes 18:81–92
+Kruk A (2007) Role of habitat degradation in determining fish
+distribution and abundance along the lowland Warta River,
+Poland. Journal of Applied Ichthyology 23:9–18
+Environmental Management (2009) 44:324–334 333
+123
+LeBlanc RT, Brown RD, FitzGibbon JE (1996) Modelling the effects
+of land use change on the water temperature in unregulated
+urban streams. Journal of Environmental Management 49:445–
+469
+Lei SA (2004) Soil compaction from human trampling, biking, and
+off-road motor vehicle activity in a blackbrush (Coleogyne
+ramosissima) shrubland. Western North American Naturalist
+64:25–130
+Lewin WC, Arlinghaus R, Mehner T (2006) Documented and
+potential biological impacts of recreational fishing: insights for
+management and conservation. Reviews in Fisheries Science
+14:305–367
+Luke SH, Luckai NJ, Burke JM, Prepas EE (2007) Riparian areas in
+the Canadian boreal forest and linkages with water quality in
+streams. Environmental Reviews 15:79–97
+Manning RE (1979) Impacts of recreation on riparian soils and
+vegetation. Water Resources Bulletin 15:30–43
+Marion JL, Cole DN (1996) Spatial and temporal variation in soil and
+vegetation impacts on campsites. Ecological Applications 6:
+520–530
+Miner JG, Stein RA (1996) Detection of predators and habitat choice
+by small bluegills: effects of turbidity and alternative prey.
+Transactions of the American Fisheries Society 125:97–103
+Mu¨ller Z, Jakab T, Toth A, Devai G, Szallassy N, Kiss B et al (2003)
+Effect of sports fisherman activities on dragonfly assemblages on
+a Hungarian river floodplain. Biodiversity and Conservation
+12:167–179
+Post JR, Sullivan M, Cox S, Lester NP, Walters CJ, Parkinson EA
+et al (2002) Canada’s recreational fisheries: the invisible
+collapse? Fisheries 27:6–17
+Radomski P, Heinrich T, Jones TS, Rivers P, Talmage P (2006)
+Estimates of tackle loss for five Minnesota walleye fisheries.
+North American Journal of Fisheries Management 26:206–212
+Roovers P, Baeten S, Hermy M (2004) Plant species variation across
+path ecotones in a variety of common vegetation types. Plant
+Ecology 170:107–119
+Ros M, Garcia C, Hernandez T, Andre´s M, Barja A (2004) Short-term
+effects of human trampling on vegetation and soil microbial
+activity. Communications in Soil Science and Plant Analysis
+35:1591–1603
+Scheffer M (1999) The effect of aquatic vegetation on turbidity: how
+important are the filter feeders? Hydrobiologia 408(409):307–
+316
+Scheuhammer AM, Norris SL (1995) A review of the environmental
+impacts of lead shotshell ammunition and lead fishing weights in
+Canada. Occasional Paper No. 88. Canadian Wildlife Service,
+Ottawa, Canada, 54 pp
+Scheuhammer AM, Money SL, Kirk DA, Donaldson G (2003) Lead
+fishing sinkers and jigs in Canada: review of their use patterns
+and toxic impacts on wildlife. Occasional Paper No. 108.
+Canadian Wildlife Service, Ottawa, Canada, 48 pp
+Schiemer F, Zalewski M, Thorpe JE (1995) Land/Inland water
+ecotones: intermediate habitats critical for conservation and
+management. Hypdrobiologia 303:259–264
+Schindler DE, Scheuerell MD (2002) Habitat coupling in lake
+ecosystems. Oikos 98:177–189
+Schramm HL, Edwards GB (1994) The perspectives on urban
+fisheries management: results of a workshop. Fisheries 19:9–15
+Schramm HL, Gerard PD, Gill DA (2003) Importance of environ-
+mental quality and catch potential to fishing site selection by
+freshwater anglers in Mississippi. North American Journal of
+Fisheries Management 23:512–522
+Slipke JW, Maceina MJ, Grizzle JM (1998) Analysis of the
+recreational fishery and angler attitudes towards hydrilla in Lake
+Seminole, a southwestern reservoir. Journal of Aquatic Plant
+Management 36:101–107
+Snickars M, Sandstro¨m A, Mattila J (2004) Antipredator behaviour of
+0 year Perca fluviatilis: effect of vegetation density and turbid-
+ity. Journal of Fish Biology 65:1604–1613
+Stuart-Smith RD, Stuart-Smith JF, White RWG, Barmuta LA (2007)
+The impact of an introduced predator on a threatened galaxiid
+fish is reduced by the availability of complex habitats. Fresh-
+water Biology 52:1555–1563
+Sun D, Walsh D (1998) Review of studies on environmental impacts
+of recreation and tourism in Australia. Journal of Environmental
+Management 53:323–338
+Suski CD, Cooke SJ (2007) Conservation of aquatic resources
+through the use of freshwater protected areas: opportunities and
+challenges. Biodiversity Conservation 16:2015–2029
+Sutherland AR, Meyer JL (2008) Effects of increased suspended
+sediment on growth rate and gill condition of two southern
+Appalachian minnows. Environmental Biology of Fishes
+80:389–403
+Troutman JP, Rutherford DA, Kelso WE (2007) Patterns of habitat
+use among vegetation-dwelling littoral fishes in the Atchafalaya
+river basin, Louisiana. Transactions of the American Fisheries
+Society 136:1063–1075
+United States Fish and Wildlife Service (2001) Fishing. Conserving
+the nature of America. Available at: http://www.fws.gov/fishing/
+. Accessed 9 January 2008
+Zar JH (1999) Biostatistical analysis, 4th edn. Prentice Hall, Upper
+Saddle River, NJ, pp 165–169
+334 Environmental Management (2009) 44:324–334
+123

@@ -1,0 +1,872 @@
+Fisheries Research 272 (2024) 106932
+Available online 14 January 2024
+0165-7836/© 2024 The Authors. Published by Elsevier B.V. This is an open access article under the CC BY-NC-ND license (http://creativecommons.org/licenses/by-
+nc-nd/4.0/).Estimating angler effort and catch from a winter recreational fishery using a
+novel Bayesian methodology to integrate multiple sources of creel
+survey data
+Caroline M. Tucker a,*, Simone Collier a, Geoffrey Legault b, George E. Morgan a, Derrick K. de
+Kerckhove a
+a Ontario Ministry of Natural Resources and Forestry, Aquatic Research and Monitoring Section, 2140 East Bank Drive, Peterborough, ON K9L 1Z8, Canada
+b Unaffiliated, Toronto, ON, Canada
+A R T I C L E I N F O
+Handled by: Russell B Millar
+Keywords:
+Survey design
+Fisheries management
+Catch rates
+Fishing effort
+Bayesian statistics
+A B S T R A C T
+The range of survey methodologies for measuring daily activity, catch and harvest (i.e. creel surveys) of recre-
+ational anglers, is increasing with the advent of new technologies and improvements in remote sensing. Indi-
+vidual creel survey types frequently give different insights into a fishery due to their unique sources of
+methodological bias and coverage, which creates a problem for resource managers since markedly different
+estimates of important fishery metrics can result. We demonstrate a joint estimation approach using a Bayesian
+statistical framework that can bring together multiple survey types to derive a single estimate for important
+metrics. This framework is applied to data collected from a relatively large winter fishery and integrates three
+traditional creel methodologies (i.e. roving, access and aerial counts), each with very different sources of bias, to
+derive a common estimate of angler effort. Models integrating two survey types are found to be have lower
+uncertainty in their estimates. Further, reductions in effort for any one survey type is found to be buffered by the
+joint estimation approach, such that resource managers will likely find benefits in using more than one survey
+methodology in an integrated fashion to monitor a fishery.
+1. Introduction
+Recreational fisheries are dynamic systems which reflect the shifting
+ecological, climatic, logistical, and socioeconomic conditions in a vari-
+ety of predictable and unexpected ways (Arlinghaus et al., 2013; Hansen
+et al., 2015; Hunt et al., 2013). Effective management of these fisheries
+relies on monitoring activities such as index netting programs and angler
+surveys (i.e. creels) to ensure managers have accurate, current data on
+both aquatic resources and angler behaviour (Arlinghaus et al., 2013;
+Hansen et al., 2015). Traditionally creel surveys monitor angler location
+and timing, effort, catch, and harvest (Committee on the Review of
+Recreational Fisheries Survey Methods, 2006), and on many lakes, creel
+programs provide long-term records of fishing activity (e.g. Rypel et al.,
+2016). However, current challenges for creel programs may reduce the
+robustness of traditional approaches (Hansen et al., 2015; Hunt and
+Moore, 2006). For example, changing environmental conditions are
+creating novel constraints on winter ice fisheries: with rising tempera-
+tures due to climate change, many lakes have more variable ice-on and
+ice-off dates and fewer days with safe ice, which limits on-ice contact
+surveys. More generally, budgetary limitations, safety concerns, and
+geographic demands may limit the efficacy of in-person surveys. All of
+these factors highlight the need to re-evaluate longstanding recreational
+creel sampling frameworks. And while alternative approaches to con-
+tact, interview-based surveys exist—including aerial and drone surveys
+(e.g. Parker et al., 2006; Smucker et al., 2010), contact video recordings
+(e.g. Smallwood et al., 2012; van Poorten et al., 2015), and web- and
+phone-based applications (e.g. Venturelli et al., 2017)—it is not always
+clear how or when new measures of recreational fisheries can be inte-
+grated into existing creel programs.
+There are two traditional approaches to contact interviews that
+collect recreational effort, catch, and harvest information: roving and
+access creels. Roving creels involve instantaneous activity counts and
+interviews of anglers made by a mobile crew comprehensively surveying
+the full landscape (e.g. Essig and Holliday, 1991; Malvestuto, 1983;
+Pollock et al., 1994). Because roving creels are mobile, they can reflect
+spatial patterns in activity and access a lake’s entire fishery, although
+* Corresponding author.
+E-mail address: carolinemtucker@gmail.com (C.M. Tucker).
+Contents lists available at ScienceDirect
+Fisheries Research
+journal homepage: www.elsevier.com/locate/fishres
+https://doi.org/10.1016/j.fishres.2023.106932
+Received 13 August 2023; Received in revised form 18 December 2023; Accepted 22 December 2023
+Fisheries Research 272 (2024) 106932
+2covering very large landscapes is prohibitive. Roving creels are assumed
+to provide an unbiased estimator of daily fishing effort (Robson, 1961;
+Robson, 1991), although any information on trip duration, catch, and
+harvest can be incomplete since anglers are intercepted at some fraction
+of their fishing trip (e.g. Essig and Holliday, 1991; Malvestuto, 1983;
+Pollock et al., 1994). As such, the survey’s representation of angler and
+trip characteristics is not unbiased: the probability of interviewing any
+angler is proportional to their trip length (Robson, 1961). Furthermore,
+catch rates and trip length may not be independent (Pollock et al.,
+1994), and if catch rates change throughout the day (such as if fish
+behaviour varies temporally), incomplete trips will have imperfect es-
+timates of catch rates.
+The second type of contact survey are access creels, which use sur-
+veyors located at fixed locations to interview anglers leaving the fishery
+at the completion of their trip (Robson and Jones, 1989). Catch rate can
+be estimated directly without bias, since access creels gather complete
+trip information, and there is a body of literature informing the timing,
+pattern, and order of interviews (Pollock et al., 1997; Rasmussen et al.,
+1998; Robson and Jones, 1989). However, access creel surveys are likely
+to under-sample effort, depending on the number and location of access
+locations, since most shorelines have many unofficial additional access
+points. As with roving creels, surveying large landscapes can be
+expensive and time-consuming.
+Alternate or complimentary approaches to contact interviews exist
+for estimating effort and catch. Aerial surveys, and more recently, drone
+flights, can provide information on angler effort at the whole landscape
+scale (Dainys et al., 2022; Lester and Dunlop, 2004; Parker et al., 2006).
+Time-lapse photography or video, counts of traffic, or counts of parked
+vehicles can also provide information on effort without incurring
+continuous staffing costs, although start-up costs and expertise re-
+quirements may be high (Steffe et al., 2008; van Poorten et al., 2015).
+Information on effort, catch and harvest can also be obtained via
+self-reporting methods such as catch cards, logbooks, mail and phone
+reports or technologies such as smartphone apps (Essig and Holliday,
+1991; Pollock et al., 1994; Venturelli et al., 2017). These approaches can
+be effective if managed well (e.g. Cooke et al., 2000) but are prone to
+various forms of self-reporting biases (Essig and Holliday, 1991;
+Weithman and Haverland, 1991).
+Recreational creel programs may use several survey types, but
+typically each survey type provides separate information that are com-
+bined after the fact. For example, aerial surveys may be used to measure
+effort while telephone surveys provide catch and harvest rates (Pollock
+et al., 1994; Smallwood et al., 2012). If two different approaches are
+used to collect similar data (i.e. using both roving and aerial surveys to
+measure effort), it is typically in order to validate one approach with the
+other (e.g. Smucker et al., 2010) or to cover temporally and spatially
+distinct aspects of a fishery (Smallwood et al., 2012). It is much less
+common for a program to use multiple data collection techniques and
+combine these to provide a joint estimate of a single index (but see
+Trudeau et al., 2021). Combining survey types has the potential to
+overcome the practical and structural limitations of individual ap-
+proaches, but the appropriate methodologies for comparing or
+combining approaches are unclear.
+One key source of differences between surveys of different types is
+that they vary in terms of when and for how long they sample a fishery,
+and so total activity or effort, catch rates, and angler characteristics can
+vary accordingly (Parker et al., 2006; Smallwood et al., 2012). Ac-
+counting for these temporal differences is essential when comparing and
+combining different survey measures (Lester and Dunlop, 2004; Lester
+et al., 1991). However, existing approaches to accounting for temporal
+differences are idiosyncratic: time is often treated as covariate or strata
+which simplifies continuous variation (Smallwood et al., 2012; Soupir
+et al., 2006; van Poorten et al., 2015) or else measures from one time
+point are expanded or scaled to describe expectations over a longer time
+period (Lester and Dunlop, 2004). Measures of recreational fishing ac-
+tivity might be best compared by relating them via a continuous
+distribution of activity over the course of a day, but such an approach
+remains to be formalized.
+Lake Nipissing is the second largest inland recreational fishery in the
+Canadian province of Ontario, supporting more than 25,000 recrea-
+tional anglers primarily for a multi-species winter ice fishery (Hunt
+et al., 2023). Nipissing’s aquatic resources are shared across summer
+and winter fisheries as well as a rights-based commercial fishery and it is
+intensively managed, particularly with respect to key species such as
+Walleye (Sander vitreus), Yellow Perch (Perca flavescens), Northern Pike
+(Esox lucius), and Lake Whitefish (Coregonus clupeaformis). The winter
+ice fishery has been surveyed with roving creels (snowmobiles) contin-
+uously annually since 1976. However, in recent years, budgetary con-
+straints make extensive roving creels difficult to justify, and increasingly
+unsafe ice conditions complicate scheduling. In response, managers
+added access creels and aerial surveys, however these are analyzed
+separately from roving creel data, giving measures of effort and catch
+that differ depending on survey type. To support the ongoing manage-
+ment efforts on Lake Nipissing this study seeks to address 1) whether
+models which account for continuous variation in the timing of surveys
+can be used to facilitate integration of multiple survey methods; 2)
+whether roving creels could be more efficiently applied when combined
+with data from additional survey methods; and 3) whether incorpo-
+rating multiple types of data helps to improve the understanding of this
+large and important fishery.
+2. Materials and methods
+2.1. Data
+The winter recreational ice fishing season on Lake Nipissing opens on
+January 1st and closes on March 15th. In 2023, the Ontario Ministry of
+Natural Resources and Forestry (MNRF) conducted three types of sur-
+veys of this winter fishery: roving creels, access site creels, and aerial
+surveys on the lake(Table 1). (All three survey types were performed in
+2021 and 2022 as well but with less replication). Nine access sites were
+used for access creels, and for roving creels and aerial surveys, the lake is
+divided into 17 sectors (Fig. 1) with data reported per sector.
+2.1.1. Access creel
+Access surveys occurred at nine access sites around the northern and
+eastern shoreline of Lake Nipissing (Fig. 1) with the sampling starting
+around 12:45 pm and ending no later than 6:45 pm in January and
+7:15 pm in February and March. These times have historically been
+chosen to represent peak times for angling parties leaving the lake after
+fishing. Crew remained at an access site for between one to six hours and
+recorded the ‘total activity’ (number of angling parties leaving the ac-
+cess site) and interviewed as many parties as possible on each hourly
+time interval (i.e., 12:45 pm to 13:45 pm, 13:45 to 14:45 pm, etc.). They
+recorded the time of the interview, trip start and end times, catch and
+harvest, party size, and fishing mode (personal ice hut, commercially
+managed recreational ice hut or on-ice angler with or without portable
+shelter). Creels were approximately evenly split between workdays and
+non-workdays. Note that not all parties counted were interviewed.
+2.1.2. Roving creel
+Roving creels were done on-site with two crew members on snow-
+mobiles and typically covered 2–3 sectors in a given day, with the main
+limitation being daylight hours. All parties in a sector were counted
+(‘total activity’), including all active commercially managed recrea-
+tional huts, active personal huts, and on-ice angling parties (with or
+without portable ice shelter), and angling parties were interviewed as
+they were encountered. Crew recorded the time of the interview, trip
+start time, catch and harvest, and party size. In addition, parties were
+asked to estimate when they expected to end their fishing trip. Creels
+were approximately evenly split between workdays and non-workdays.
+Note that not all parties counted were interviewed.
+C.M. Tucker et al.
+Fisheries Research 272 (2024) 106932
+32.1.3. Aerial survey
+Manned aerial surveys covered all 17 ice sectors per flight, with a
+trained onboard observer recording the ‘total activity’ (counts of all
+active huts, both personal and commercially operated, as well as the
+number of anglers fishing on the ice) per sector. The timing of each
+sector-level count was recorded. Half of flights were scheduled for
+mornings (start times between 10:00 am – 12:00 am) and half for af-
+ternoons (start times between 1:00 pm – 3:00 pm) (Table 1). Flights
+were also varied between workdays and non-workdays.
+Active huts in both roving surveys and aerial counts were distin-
+guished from empty huts based on the presence of snowmobiles, ATVS,
+or trucks/cars parked nearby; exhaust from gas or wood heating; and/or
+presence of individuals seen inside or outside.
+2.1.4. Spatial relationships
+In order to describe the geographic relationship between access points
+and roving creel ice sectors, on-ice creel surveyors in 2022 asked anglers
+to identify the point on a map where they had accessed the ice. This
+process repeated in 2023 using an electronic tablet to record the loca-
+tional information. In 2023, access creel surveyors also asked anglers to
+point on a map at the roving creel sector where they fished on that trip.
+Both the access and roving datasets described quantitatively similar
+pairwise access site-ice sector relationships, and so they were combined
+into a single matrix describing the proportion of anglers at a given access
+site which come from a given ice sector (Supplementary Info Table S1).
+Table 1
+Overview of 2023 on-site surveys of the winter recreational fishery on Lake Nipissing.
+# of Sites or Sectors for lake # Unique Days Surveyed Total # surveys Total # angling parties interviewed Earliest survey time Latest survey time
+Access Creel 9 26 246 323 12:48 7:10
+Roving Creel 17 20 73 305 11:12 5:30
+Aerial Survey 17 8 120 NA 10:33 3:34
+Table 2
+Results from the effort module which uses angling party activity from surveys to
+estimate effort (total number of angling parties present) for the full 2023 winter
+recreational fishing season on Lake Nipissing. The means and standard de-
+viations for each model type are calculated across 4000 posterior samples.
+Models are fit using the access-derived activity curve (1) or the roving-derived
+activity curve (2) (see Methods for further details).
+# of Parties
+1. Access activity curve 2. Roving activity curve
+Model type μ σ2 μ σ2
+Access only 12,169 366 17,237 601
+Aerial + Access 11,528 14 12,555 93
+Roving only 39,192 3,322 46,389 3,797
+Roving + Aerial 20,877 1,050 25,100 1,241
+Roving + Access 22,079 183 27,782 305
+Fig. 1. Map showing Lake Nipissing, Ontario Canada. Points show the location of the nine access creel sites (bullets) for the winter of 2023. Ice sectors used to guide
+roving and aerial surveys are denoted W1-W8 (west side of the lake) and E1-E6 (east side).
+C.M. Tucker et al.
+Fisheries Research 272 (2024) 106932
+42.2. Modelling
+The model of the Nipissing recreational winter fishery was composed
+of three modules: 1) functions describing angling effort – the total
+number of anglers expected at an access site or on an ice sector on a
+given day type; 2) functions describing trip duration and party size; and
+3) functions describing catch and harvest rate. Total catch (or harvest)
+for the fishery for the winter season combines the output from the three
+modules with seasonal information as:
+TotalCatch = ∑
+d=DayType
+(Effortd × #Daysd) × TripDuration × PartySize
+× CatchRate
+Details on model parameters and associated priors can be found in
+Table S2.
+2.2.1. Effort module
+Different data types—alone or in combination—can be used to run
+the effort module. We explore effort modules composed of different
+combinations of access survey, roving survey, or aerial count data.
+Specifically, effort modules composed as access-only, access -aerial,
+roving-access, roving-aerial, and roving-only data combinations will be
+compared. Details on their construction follows.
+We assume that for each lake access site/ice sector i and day type j,
+there are ni,j angling parties that could be counted by observers if they
+spend the full day counting parties. Day type is either 0 (workday) or 1
+(non-workday). Effort per day type is therefore the sum of all ni,j angling
+parties. These parameters ni,j are partially pooled such that they are
+drawn from the same normal distribution (left truncated at 0):
+ni,j ∼ Normal
+(
+nmuj , σ2
+site/sector
+)
+T[0, ] (1)
+where nmuj is the average number of angling parties at lake access sites or
+ice sectors on day type j and σ2
+site/sector is the variation among access sites/
+ice sectors. The average number of angling parties on day type j is equal to
+nmuj = nmue(βdaytype j), where βdaytype is the effect of non-workdays (j = 1).
+In reality, observers were not spending full days counting parties at
+access sites/ice sectors and so we must relate these “potential” full-day
+counts to the actual activity count data collected from surveys spanning
+comparatively short time intervals (i.e., counts from roving or access
+surveys). To do so, we apply survival analysis (i.e., time to event anal-
+ysis) by assuming that all ni,j angling parties arrive on the lake at the
+start of a fishing day and that parties leaves the ice, or “die” with some
+probability that depends on the time of day. Assuming that angling starts
+at 6:30 am and ends before 8:30 pm, these times can be rescaled to 0 and
+1 respectively, and the probability of leaving the ice can then be
+described by a beta distribution with shape parameters (α, β). We use a
+beta distribution because of its flexible shape: the probability of ending
+angling trips can be relatively uniform across the day, more likely in the
+morning/afternoon, or highly concentrated within a short time interval,
+for example between 5 pm and 6 pm. This flexibility means that the
+assumption that all trips start at 6:30 am is somewhat forgiving, espe-
+cially if the parameterization has most trips ending later in the day (i.e.,
+α values are high relative to β).
+Given the above model, it follows that the probability of observing an
+angling party still on the ice at time t (i.e., observing a party whose trip is
+still “surviving”) when the observation is instantaneous, or nearly so, is
+the survival function S(t) of the beta distribution:
+p(T = t|α, β) = S(t|α, β) (2)
+Similarly, for observations within an interval [t1, t2], the probability
+of observing an angling party leaving is the difference between two
+survival functions:
+p(t1 < T < t2|α, β)i = S(t1|α, β)  S(t2|α, β) (3)
+Therefore, depending on whether observations are instantaneous
+(roving creels) or within an interval (access creels), we can use either
+Eqs. 2 or 3 to link the total number of angling parties at access site i and
+day type j, ni,j, with our observations of angling parties leaving the ice.
+Specifically, if there are ni,j possible angling parties to observe and each
+party has probability pt of not being observable at time t because they
+have already left the ice, then the number of parties successfully
+observed at time t, mt,i,j, has a binomial distribution:
+mt,i,j ∼ Binomial ni,j, pt
+) (4)
+where pt is either Eqs. 2 or 3.
+Eqs. 1–4 are sufficient for estimating ni,j with either roving or access
+data (referred to as ‘roving-only’ and ‘access-only’ models). Below we
+describe additions to these models that can utilize two data types to
+estimate ni,j.
+2.2.2. Roving-aerial model
+Roving and aerial surveys count the same quantity (huts) at the same
+spatial resolution (per sector). However, for a particular access site i and
+day type j, such surveys will not necessarily align in terms of exact
+counts. Therefore, to combine these data types into one model, we add
+observation error to the model described in the previous section (Eqs.
+1–4) such that the distribution of roving survey counts at time t, for
+sector i, and day type j, qt,i,j, is:
+qt,i,j ∼ Normal
+(
+mt,i,j , σ2
+roving
+)
+(5)
+where σ2
+roving is variation from the true short-term count, mt,i,j, arising
+from biases in roving surveys. Similarly, for aerial counts:
+qt,i,j ∼ Normal mt,i,j , σ2
+aerial
+) (6)
+where σ2
+aerial is variation arising from biases in aerial surveys.
+2.2.3. Roving-access and Aerial-access models
+For these models, the two data sources involve different spatial
+resolutions: access sites and ice sectors. Each access site is assumed to
+contain some fraction of the angling parties from multiple sectors (e.g.,
+an access site might contain 94% of all anglers from sector 1% and 1% of
+anglers from 6 other sectors). To account for this, we estimate all sector-
+level ni,j parameters, multiply these estimates by constants for each ac-
+cess site (see Table S1), and finally sum them. Thus, we model roving or
+aerial data with Eqs. 1–4 as usual, while for access data obtained from
+access site h, we replace Eq. 4 with:
+mt,h,j ∼ Binomial(vh, pt ) (4)
+where vh is the sum vh = ∑
+k
+nk,jrk,h across all k sectors and rk,h is a con-
+stant representing the fraction of angling parties from sector k associated
+with access site h.
+2.2.4. Fitting the effort module to data
+For the access-only model we estimated the following: ni,j (9 access
+sites), nmu, σ2
+site, βdaytype, α, and β. For the roving-only model we esti-
+mated: ni,j (14 sectors), nmu, σ2
+sector, βdaytype, α, and β. In addition, to
+understand the influence of different α, and β terms, we estimated pa-
+rameters from the access-only model with α, and β fixed to match to the
+values estimated from the roving-only model. We similarly estimated
+parameters from the roving-only model with α, and β fixed to match to
+the values estimated from the access-only model.
+For the roving-aerial model we estimated: ni,j, nmu, σ2
+sector, βdaytype,
+σ2
+roving, and σ2
+aerial. For the roving-access and aerial-access models we
+C.M. Tucker et al.
+Fisheries Research 272 (2024) 106932
+5estimated ni,j, nmu, σ2
+sector, βdaytype. For each of these joint models, we
+fixed α, and β and ran the models twice, once with values from the
+access-only model and once with values from the roving-only model.
+2.2.5. Trip characteristics module
+The trip characteristics module provided descriptions of the party
+size, rods per angler, and trip duration. Party size was modelled as a
+Poisson distribution (Pois(λpartysize)), with expected number of anglers per
+party. Trip duration was modelled as a normal distribution, with mean
+duration (μ, hours) and variance σ2, Normal(μduration, σ2
+duration). The trip
+module was fit separately to the 2023 access interview data, and the 2023
+roving interview data to provide a comparison of the trips described by
+these two different survey types. Additionally, the 2023 roving trip data
+was divided into responses from parties in commercially operated rec-
+reational huts and from parties in personal ice huts to compare their
+potential differences. The number of rods used per angler was modelled
+as a normal distribution with μrods, and σ2
+rods Values for λpartysize, μduration,
+σ2
+duration, μrods, and σ2
+rods are estimated by the trip module.
+2.2.6. Catch and harvest module
+The catch and harvest module modelled catch and harvest rates with
+a gamma-hurdle model to account for the large number of zeroes. The
+catch rate (number of fish caught per hour, c) of species j for angling
+party i:
+P cji
+) =
+{ θCj cji = 0
+ 1  θCj
+) • Gamma
+(
+cji⃒⃒ αCj , βCj
+)
+cji ∕= 0 (5)
+where θCj is the probability of a catch of 0, and αCj , βCj are parameters
+of the Gamma distribution. Harvest rate (number harvested/hour, h)
+was modelled in the equivalent fashion. We fit the catch and harvest
+module to the data collected during 2023 access interviews, and sepa-
+rately to the data collected during the 2023 roving interviews. We report
+catch and harvest rates for the four most commonly targeted species:
+Walleye, Yellow Perch, Lake Whitefish, and Northern Pike. Values for ̂ cj ,
+θC, αC, βC,̂ hj , θH, αH, andβH are estimated by the catch and harvest
+module.
+All modules were coded in the Stan Language (mc-stan.org) and
+implemented using the cmdstanR package (https://mc-stan.org/c
+mdstanr/). All Bayesian models were run with four independent
+chains, each with 1000 warm-up samples and 1000 additional samples
+for a total of 4000 samples. All chains converged to a stationary distri-
+bution, as indicated by the Gelman and Rubin (1992) scale reduction
+factor R ˆ < 1.1 and so the results presented here are presumed to be
+robust.
+2.3. Subsampling
+We explored the impact of reducing roving creel frequency—as has
+been suggested for Lake Nipissing for safety and budgetary reasons—on
+the accuracy and precision of estimates of fishing effort. We compared
+the impact of reducing roving creel interviews for the roving-only, the
+roving-aerial, and roving-access models described above in the effort
+module. The impact of reducing sampling frequency was simulated by
+randomly removing 12.5%, 25%, 50%, or 75% of roving data (where
+each data point represents an activity count made for a specific ice sector
+on a specific day) and fitting the appropriate model to the reduced data
+set. This approach may be slightly unrealistic, since particular sectors
+are typically sampled together, but we ignore this for simplicity of
+randomization. We replicated this process of randomly removing data
+points 100 times for each level of the 12.5%, 25%, 50%, or 75%. Each
+replicate model was run with one independent chain, with 1000 warm-
+up samples and 1000 additional samples, and the mean and standard
+deviation of the estimated total season’s effort was recorded.
+3. Results
+3.1. Data
+In 2023, access creel surveys were carried out on a total of 26 days,
+roving creel surveys on 20 days, and aerial surveys on eight days. This
+resulted in 323 interviews of angling parties from access creels and 305
+interviews from roving creels.
+3.2. Effort module
+The α and β terms of the beta distribution describing the probability
+of angling trips ending (i.e., “activity profile”; see Eqs. 2–3 and associ-
+ated text) were estimated for two different activity profiles, one for the
+access-only model, and one for the roving-only model. Both the roving-
+derived and access-derived activity profiles (based on the estimated
+mean values of α and β) showed that the probability of an angling party
+completing their trip increased throughout the day, with the average
+trip ending at 4:33 pm in the access-derived profile and 5:14 pm for
+roving-derived profile (Fig. 2). However, the access-derived profile
+shows activity strongly peaking in the late afternoon, whereas the
+roving-derived curve suggests activity is more dispersed.
+These differences between the two activity curves in turn led to
+differences in estimates of season effort. We estimated the total season’s
+effort for each of five model types (representing different data sources or
+combinations of data sources), for each of the two activity profiles. This
+gave a total of 10 different estimates of season effort (Table 3; Fig. 3).
+The roving-derived activity profile always had higher estimates of
+effort (Table 3, column 1) compared to the access-derived activity pro-
+file (Table 4, column 2) for the same model type. Across the model
+types—representing different data sources—the roving-only model had
+the highest estimate of activity (39,192 parties or 46,389 parties with
+the activity- and roving-derived profiles respectively), many times
+higher than the access-only model’s estimate (12,169 parties or 17,237
+parties). Estimates for the remaining model types, which incorporated
+two data sources, fell between these extremes. The roving-only and
+roving-aerial models had much higher uncertainty (σ2) regardless of the
+activity profile used, compared to the remaining models.
+3.3. Trip characteristics module
+The characteristics of a typical ice fishing trip on Nipissing depended
+on whether it was modelled using roving interview or access interview
+data (Table 5). Trips reported at access interviews had slightly fewer
+anglers per party (2.4 versus 2.6). They also had longer average trip
+duration (5.1 versus 2.8 h), which is not surprising given access
+Fig. 2. Activity profiles derived from the access creel interviews (access-only
+model, blue curve) or roving creel interviews (roving-only model, green curve).
+The y-axis represents the probability density for observing an angling party
+completing their trip; the x-axis represents the time of day.
+C.M. Tucker et al.
+Fisheries Research 272 (2024) 106932
+6interviews reflect completed trips and roving interviews reflect inter-
+rupted trips. When roving parties were asked to estimate their total trip
+length, the average estimated trip length was 6.4 h. We also separated
+the roving interview data by party type (Table 6) and fit the trip module
+separately to each; we found that parties in commercially operated ice
+huts tended to have longer interrupted and estimated trip durations and
+larger party sizes compared to parties in personal ice huts and on-ice
+parties.
+3.4. Catch and harvest module
+2023 catch and harvest rates for four of the most commonly targeted
+species are shown in Table 6. Catch rates for Walleye were higher when
+reported in access creel interviews as compared to roving creel in-
+terviews, although harvest rates were fairly similar. Yellow perch catch
+rates were higher when reported in roving interviews compared to ac-
+cess interviews.
+3.5. Subsampling
+We explored the effect of reducing roving effort on the accuracy and
+precision of estimates of effort (total number of parties per season)
+(Figs. 4 and 5; Table 6) by reducing the roving data by 12.5%, 25%,
+50%, or 75% with 100 replicate sub-samples per level. The mean esti-
+mate of effort did not change for the roving-only model as the amount of
+data used in the model was decreased, although the range of effort
+values estimated across the replicates increased greatly (error bars in
+Fig. 4). The roving-aerial and roving-access model had slight decreases
+in the mean estimates of effort as roving data was reduced. The coeffi-
+cient of variation associated with an estimate of effort more than
+doubled at the highest level of reduction for the roving-only model. For
+both roving-access and roving-aerial models, the coefficient of variation
+did not increase significantly.
+4. Discussion
+Recreational fisheries may employ multiple types of surveys in order
+to best capture features like angler effort, trip characteristics, and catch
+and harvest rates for key species. Though different survey approaches
+have varied strengths and weakness—costs and labour requirements,
+spatial and temporal coverage of the fishery, and potential for angler
+interviews—integrating their results to develop a holistic understanding
+of a fishery is not straightforward. We use Lake Nipissing’s winter rec-
+reational fishery as a case study and demonstrate a novel approach to
+combining and comparing different survey data types. On Lake Nipiss-
+ing, both access creels, roving creels, and aerial surveys of the winter
+recreational fishery are performed concurrently, but they traditionally
+are analyzed separately. However, different methods give different and
+potentially incomparable estimates of effort, trip characteristics, catch
+rates, and harvest rates. When we combined these data sets with an
+explicit model of temporal patterns in daily angler activity, we were able
+to obtain estimates of effort that incorporated multiple data types.
+Further, when we simulated the impact of reducing roving creels (a
+likely event as ice conditions become more variable on Lake Nipissing),
+we found that these multi-data models provided consistent estimates of
+effort with low uncertainty even under high levels of roving data
+reduction.
+The timing of creel surveys is recognized to be important (Lester and
+Dunlop, 2004; Parker et al., 2006; Stamatopoulos, 2002), and is often
+accounted for by sampling during the times most likely to be active or by
+splitting days into strata (e.g. a.m. and p.m., daytime and nighttime)(e.g.
+Trudeau et al., 2021). The activity profile approach used here has its
+Table 3
+Results from the trip characteristics module for the 2023 winter recreational
+fishery on Lake Nipissing. Trip characteristics of party size, trip duration, and
+their product - total effort per party – are calculated for each of the access and
+roving interview data sets. ‘Roving interviews’ refers to the trip duration
+calculated based on the interrupted trips, while ‘Roving interviews (estimated)’
+refers to the trip duration calculated based on anglers’ estimated trip completion
+times.
+Access
+interviews
+Roving
+interviews
+Roving
+interviews
+(estimated)
+μ σ2 μ σ2 μ σ2
+Anglers per party (#) 2.4 0.04 2.6 0.10 2.6 0.10
+Trip duration (hours) 5.1 0.06 2.8 0.09 6.4 0.10
+Expected effort per party (angler-
+hours)
+12.2 0.24 7.2 0.35 16.5 0.67
+Fig. 3. Estimates of total effort (# of angling parties over the 2023 winter ice fishing season on Lake Nipissing) for each of the different model types. Dark grey points
+show the average estimate made when using the access-derived activity profile; light grey points show the average estimate made when using the roving-derived
+activity profile. Error bars show the 95% confidence intervals around the mean estimate.
+Table 4
+Results from the trip characteristics module for each type of angling party,
+calculated using data from roving interviews.
+Personal Ice
+Hut
+Commercial Ice
+Hut
+Open Ice
+Anglers
+μ σ2 μ σ2 μ σ2
+Anglers per party (#) 2.2 0.1 3.9 0.3 2.6 0.2
+Trip duration (hr) 2.3 0.1 4.7 0.1 3.1 0.1
+Trip duration (hr) - Estimated 8.8 4.1 11.3 0.1 6.1 0.1
+C.M. Tucker et al.
+Fisheries Research 272 (2024) 106932
+7roots in these approaches and others, and shares with Lester and Dunlop
+(2004) the description of angler activity as a continuous curve rather
+than discrete strata. However, Lester and Dunlop (2004) recommend
+sampling at the most active time and then using an appropriate expan-
+sion coefficient to calculate the total daily effort, an approach that is
+most straightforward if angler activity is centered on midday and sym-
+metrical. The benefit of sampling and modelling the full day, as we
+recommend, is to 1) allow better estimation of the shape of the daily
+activity profile; 2) account for practical realities which prevent surveys
+from only occurring during the most active times of the day; 3) in light of
+2), allow surveys performed at varying times to be compared directly;
+and 4) allow more accurate expansion of survey counts to estimate daily
+activity. Modelling angler activity in this way provided important
+insight into the biases associated with access and roving creel data sets
+collected for the Nipissing fishery.
+In general, the access-derived and roving-derived activity curves
+described a similar pattern in which winter angling trips most frequently
+end late in the afternoon. The late day peak in activity is related to the
+popularity of the Walleye fishery: Walleye activity increases as light
+levels decline leading to anglers not leaving until just before sunset
+(Einfalt et al., 2012; Parker et al., 2006). Notably, the roving-derived
+curve describes greater diversity in the timing of when anglers leave:
+the reason for this difference is unrelated to the usual explanation for
+higher effort from roving creels compared to access creels (i.e. that an-
+glers that use unofficial access sites are missed). Instead, one difference
+is driven by differences in survey times as on-ice surveys are more likely
+to encounter angling parties completing short morning trips which may
+be missed by late afternoon access creels. The additional difference is
+due to the specifics of the Nipissing fishery, in that roving creels are able
+to interview angling parties from commercially-operated ice huts, which
+are not accessible to access creels (as commercially-operated ice huts use
+private access points). Even if access creels could interview anglers using
+commercially-operated huts, these anglers arrive earlier and stay later
+(including overnight) on average and would be more likely to be missed
+by access surveys. For these reasons, the roving-derived curve produces
+higher estimates of effort which are likely more representative of the
+true angling effort on Nipissing (Table 3). When we repeated the ana-
+lyses described here using 2021 and 2022 data sets, we found that
+Table 6
+Results from simulations exploring the effect of reducing roving data in the roving-only, roving-aerial, and roving-access models of angling effort. Table shows the
+mean estimate of season’s effort (μ) and the mean uncertainty for the estimate (σ2) across 100 replicates at 12.5%, 25%, 50%, and 75% reduction in roving data.
+Model type Roving only Roving + Aerial Roving + Access
+Average estimate of effort Average uncertainty (σ2) Average estimate of effort Average uncertainty (σ2) Average estimate of effort Average uncertainty (σ2)
+Full data 46,389 3,797 25,126 1,306 27,782 307
+12.5%
+Decrease
+46,076 3,829 24,285 1,220 27,544 337
+25% Decrease 46,099 3,940 22,818 1,174 26,618 362
+50% Decrease 45,836 4,463 22,333 1,079 26,435 448
+75% Decrease 46,294 7,243 19,383 972 21,685 505
+Fig. 4. Effect of reducing roving data on the mean estimate of season’s effort (total number of angling parties) for the winter recreational fishery on Lake Nipissing.
+The y-axis shows the percent change in the estimate as compared to the estimate from the full data set (Table 6) and the error bars show the variation (σ2 in the mean
+estimate across the 100 simulations). The effect of reducing roving effort was calculated for each of the model types that use roving creel data – the roving-only,
+roving-access, and roving-aerial models. Note that points for different models are slightly offset on the x-axis for visibility.
+Table 5
+Results from the catch and harvest module. Catch and harvest rates (# fish/hour) for the four most commonly targeted fish species in the 2023 winter recreational
+fishery on Lake Nipissing. Rates are shown based on access interview data (1) and roving interview data (2).
+Catch rate Harvest rate
+1. Access interviews 2. Roving interviews 1. Access interviews 2. Roving interviews
+μ σ2 μ σ2 μ σ2 μ σ2
+Walleye 0.531 0.0396 0.215 0.0231 0.069 0.0083 0.055 0.0089
+Yellow Perch 0.176 0.0180 0.372 0.0375 0.100 0.0142 0.233 0.0259
+Northern Pike 0.023 0.0040 0.024 0.0052 0.008 0.0025 0.012 0.0035
+Lake Whitefish 0.006 0.0021 0.005 0.0021 0.002 0.0009 0.003 0.0017
+C.M. Tucker et al.
+Fisheries Research 272 (2024) 106932
+8similar activity profiles (α and β parameter values) were estimated for
+the roving-only and access-only models, suggesting that angling party
+arrival time, end time, and overall trip length is a predictable behaviour,
+and that α and β values estimated in one year may remain relevant for
+multiple years.
+Our approach to combining multiple data types into a single model
+relied on one of two methods: 1) modelling the angling activity from
+different sources as sharing a distribution since they were analogous but
+not identical; or 2) modelling the measures from different sources as
+representing analogous measures and differing only due to observation
+error. When combining access data with either aerial or roving data,
+counts made at the access site were treated as similar (but not inter-
+changeable) to on-ice data sets using the first method. When combining
+aerial and roving data types this latter approach was used, since both
+produce seemingly interchangeable counts of on-ice activity. We found
+that roving data gave the highest mean estimates of effort when it was
+the only data source, and that combining roving survey data with either
+access or aerial data led to lower mean estimates of overall effort
+(Table 1). That this is true when modelling roving and aerial surveys
+together is surprising, given that these measures are believed to capture
+the same population of angling parties (counts of ice huts in a given
+sector). Roving creel estimates of effort are also more variable when
+considered alone compared to when combined with aerial surveys: this
+may be because roving creels can visit only two sectors per day
+compared to aerial surveys which cover all ice sectors concurrently.
+Jointly estimating effort using the roving-access model gave lower es-
+timates of effort with lower variability compared to the roving-model
+alone. Access surveys are known to under-estimate effort because
+there are also unofficial access sites along Lake Nipissing that are not
+surveyed. However, it is promising that the roving-aerial and roving-
+access model types give similar estimates of effort and have reduced
+uncertainty as compared to roving alone. This suggests that combining
+roving creel data with additional data sources can provide more reliable
+and less variable estimates of effort.
+We used a sub-sampling approach to further explore the implications
+of potentially decreasing roving creels in the future. We found that the
+mean estimates of effort were consistent with even large decreases in
+roving surveys, provided multiple data sources were included in the
+model. To some extent this is the result of the proportionally greater
+decline in sample size in the roving-only model compared to the joint
+models. However, this subsampling schema represents reasonable plans
+for future surveys of the winter recreational creel on Nipissing. These
+results suggest that – with significant budgetary savings – roving creels
+can be reduced if either access or aerial surveys are maintained.
+Similarly, if roving creels are maintained but become less reliable to
+schedule due to ice safety, small decreases in replication might have
+acceptable impacts on estimates of effort. The choice of maintaining
+aerial surveys or access creels may depend on the associated costs: for
+example, on Nipissing, access creels cost around $600.00 CAD per day
+(including vehicle rentals, labour, training, and supplies) while aerial
+surveys cost around $2000.00 CAD per flight (including labour, fuel and
+flight). As a comparison, roving surveys cost ~$900.00 CAD per day
+(including fuel, maintenance, and labour) (all pers comm.) Flights can
+be somewhat inflexible to reschedule in inclement weather and start and
+end times are limited by travel time. The higher cost of aerial surveys,
+and the lack of in-person interviews, may lead to a preference for access
+creels going forward. In terms of costs, drones may provide a less
+expensive alternative to manned aerial surveys in the future.
+Timing is also essential when comparing catch (and so harvest) rates
+between different surveys, since catch rates are known to vary in rela-
+tion to temporal patterns in predator activity, food availability, and fish
+hunger (Kuparinen et al., 2010; Uusi-Heikkil¨a et al., 2008). Comparing
+the timing of roving and access interviews helped to explain why they
+differed so markedly in Walleye catch rates. Walleye activity and
+foraging success increases with lowered light levels and so catch rates
+are unsurprisingly much lower during the roving interviews, which
+occur early in the day and mid-fishing trip. If roving creels are reduced
+in the future, this suggests that using catch rates collected using the
+alternative contact approach (access creels) might be preferable and
+more reflective of full-trip catch rates.
+5. Conclusions
+Taken separately, any one of the survey types here gives a different
+descriptions of Lake Nipissing’s winter recreational fishery. By ac-
+counting for temporal trends in activity, catch, and party identity, we
+show that it is possible to reconcile these differences and develop a more
+holistic understanding of the fishery. The approach described here
+provided some important insights into measurement of the Lake
+Nipissing winter recreational fishery, including the importance of better
+representing commercial huts in measures of effort, and the suggestion
+from the roving data that angling activity is more dispersed throughout
+the day than typically assumed. This description of angler activity over a
+day forms the backbone of the model presented here: for a given activity
+profile, different data sources describing effort, party characteristics,
+and identity can then be incorporated. This allows an informed
+approach which incorporates the most reflective data describing each
+component (effort, trip characteristics, catch rate) of the fishery.
+Fig. 5. Effect of reducing roving data on the precision (coefficient of variation, shown as a percentage of the mean) of the estimate of season’s effort (total number of
+angling parties) for the winter recreational fishery on Lake Nipissing. The effect of reducing roving effort was calculated for each of the models containing roving
+creel data – the roving-only, roving-access, and roving-aerial models.
+C.M. Tucker et al.
+Fisheries Research 272 (2024) 106932
+9CRediT authorship contribution statement
+Collier Simone: Data curation, Software. Tucker Caroline M:
+Conceptualization, Data curation, Formal analysis, Methodology, Soft-
+ware, Validation, Visualization, Writing – original draft, Writing – re-
+view & editing. Legault Geoffrey: Conceptualization, Methodology,
+Software, Writing – review & editing. de Kerckhove Derrick: Concep-
+tualization, Data curation, Funding acquisition, Project administration,
+Resources, Supervision, Writing – review & editing. Morgan George E:
+Data curation, Formal analysis, Methodology, Project administration,
+Writing – review & editing.
+Declaration of Competing Interest
+The authors declare that they have no known competing financial
+interests or personal relationships that could have appeared to influence
+the work reported in this paper.
+Data availability
+Data will be made available on request.
+Acknowledgements
+Thanks are due to Michelle Gorrie (MNRF), Kim Tremblay (MNRF),
+Nikki Commanda (Nipissing First Nation), Victoria Kopf (MNRF), Lee
+Gutowsky (Fisheries and Oceans Canada), and Roxanne Boodhoo whose
+contributions to the field activities made this project successful.
+Appendix A. Supporting information
+Supplementary data associated with this article can be found in the
+online version at doi:10.1016/j.fishres.2023.106932.
+References
+Arlinghaus, R., Cooke, S.J., Potts, W., 2013. Towards resilient recreational fisheries on a
+global scale through improved understanding of fish and fisher behaviour. Fish.
+Manag. Ecol. 20, 91–98.
+Committee on the Review of Recreational Fisheries Survey Methods, O.S.B. Review of
+recreational fisheries survey methods: National Academies Press; 2006.
+Cooke, S.J., Dunlop, W.I., Macclennan, D., Power, G., 2000. Applications and
+characteristics of angler diary programmes in Ontario, Canada. Fish. Manag. Ecol. 7,
+473–487.
+Dainys, J., Gorfine, H., Mateos-Gonz´alez, F., Skov, C., Urbanaviˇcius, R., Audzijonyte, A.,
+2022. Angling counts: harnessing the power of technological advances for
+recreational fishing surveys. Fish. Res. 254, 106410.
+Einfalt, L.M., Grace, E.J., Wahl, D.H., 2012. Effects of simulated light intensity, habitat
+complexity and forage type on predator–prey interactions in walleye S ander vitreus.
+Ecol. Freshw. Fish. 21, 560–569.
+Essig, R.J., Holliday, M.C., 1991. Development of a recreational fishing survey: the
+marine recreational fishery statistics survey case study. Creel and angler surveys in
+fisheries management American Fisheries Society, Symposium. Bethseda, Maryland:
+American Fisheries Society.
+Hansen, G.J.A., Gaeta, J.W., Hansen, J.F., Carpenter, S.R., 2015. Learning to manage and
+managing to learn: sustaining freshwater recreational fisheries in a changing
+environment. Fisheries 40, 56–64.
+Hunt, L.M., Moore, J., 2006. The potential impacts of climate change on recreational
+fishing in Northern Ontario. Clim. Change Res. Rep. Ont. For. Res. Inst.
+Hunt, L.M., Sutton, S.G., Arlinghaus, R., 2013. Illustrating the critical role of human
+dimensions research for understanding and managing recreational fisheries within a
+social-ecological system framework. Fish. Manag. Ecol. 20, 111–124.
+Hunt, L.M., Ball, H., Ecclestone, A., Wiebe, M., 2023. Selected results from the 2020
+recreational fishing survey in Ontario: Fisheries management zones, provincially
+significant inland fisheries, and Great Lakes. Science and Research Technical Report.
+Peterborough ON.
+Kuparinen, A., Klefoth, T., Arlinghaus, R., 2010. Abiotic and fishing-related correlates of
+angling catch rates in pike (Esox lucius). Fish. Res. 105, 111–117.
+Lester, N.P., Dunlop, W.I., 2004. Monitoring the state of the lake trout resource: a
+landscape approach. Boreal shield watersheds: lake trout ecosystems in a changing
+environment CRC Press, Boca Raton, Florida:293–321.
+Lester, N.P.; Petzold, M.M.; Dunlop, W.I. Sample size determination in roving creel
+surveys. Creel and angler surveys in fisheries management American Fisheries
+Society, Symposium. Bethseda, Maryland: American Fisheries Society; 1991.
+Malvestuto, S.P., 1983. Sampling the recreational fishery. In: Nielson, A., Johnson, D.L.
+(Eds.), Fisheries techniques. American Fisheries Society, Bethseda, Maryland.
+Parker, S., Krausse, M., Dunlop, W., 2006. Estimating angler effort from aerial surveys.
+NWSI Tech. Rep.
+Pollock, K.H., Hoenig, J.M., Jones, C.M., Robson, D.S., Greene, C.J., 1997. Catch rate
+estimation for roving and access point surveys. North Am. J. Fish. Manag. 17, 11–19.
+Pollock, K.H., Jones, C.M., Brown, T.L., Angler survey methods and their application in
+fisheries management. Bethseda, Maryland: American Fisheries Society; 1994.
+Rasmussen, P.W., Staggs, M.D., Beard Jr, T.D., Newman, S.P., 1998. Bias and confidence
+interval coverage of creel survey estimators evaluated by simulation. Trans. Am.
+Fish. Soc. 127, 469–480.
+Robson, D., Jones, C.M., 1989. The theoretical basis of an access site angler survey
+design. Biometrics 83–98.
+Robson, D.S., 1961. On the statistical theory of a roving creel census of fishermen.
+Biometrics 17, 415–437.
+Robson, D.S. The roving creel survey. Creel and angler surveys in fisheries management
+American Fisheries Society, Symposium. Bethseda, Maryland: American Fisheries
+Society; 1991.
+Rypel, A.L., Lyons, J., Griffin, J.D.T., Simonson, T.D., 2016. Seventy-year retrospective
+on size-structure changes in the recreational fisheries of Wisconsin. Fisheries 41,
+230–243.
+Smallwood, C.B., Pollock, K.H., Wise, B.S., Hall, N.G., Gaughan, D.J., 2012. Expanding
+aerial–roving surveys to include counts of shore-based recreational fishers from
+remotely operated cameras: benefits, limitations, and cost effectiveness. N. Am. J.
+Fish. Manag. 32, 1265–1276.
+Smucker, B.J., Lorantas, R.M., Rosenberger, J.L., 2010. Correcting bias introduced by
+aerial counts in angler effort estimation. North Am. J. Fish. Manag. 30, 1051–1061.
+Soupir, C.A., Brown, M.L., Stone, C.C., Lott, J.P., 2006. Comparison of creel survey
+methods on Missouri River reservoirs. North Am. J. Fish. Manag. 26, 338–350.
+Stamatopoulos, C. Sample-based fishery surveys. A technical handbook FAO Fishery
+Technical Paper, Rome: FAO. 425:1–132; 2002.
+Steffe, A.S., Murphy, J.J., Reid, D.D., 2008. Supplemented access point sampling designs:
+a cost-effective way of improving the accuracy and precision of fishing effort and
+harvest estimates derived from recreational fishing surveys. N. Am. J. Fish. Manag.
+28, 1001–1008.
+Trudeau, A., Dassow, C.J., Iwicki, C.M., Jones, S.E., Sass, G.G., Solomon, C.T., van
+Poorten, B.T., Jensen, O.P., 2021. Estimating fishing effort across the landscape: a
+spatially extensive approach using models to integrate multiple data sources. Fish.
+Res. 233, 105768.
+Uusi-Heikkil¨a, S., Wolter, C., Klefoth, T., Arlinghaus, R., 2008. A behavioral perspective
+on fishing-induced evolution. Trends Ecol. Evol. 23, 419–421.
+van Poorten, B.T., Carruthers, T.R., Ward, H.G.M., Varkey, D.A., 2015. Imputing
+recreational angling effort from time-lapse cameras using an hierarchical Bayesian
+model. Fish. Res. 172, 265–273.
+Venturelli, P.A., Hyder, K., Skov, C., 2017. Angler apps as a source of recreational
+fisheries data: opportunities, challenges and proposed standards. Fish Fish 18,
+578–595.
+Weithman, A.S., Haverland, P., 1991. Comparability of data collected by telephone and
+roving creel surveys. In: Guthrie, D., Hoenig, J.M., Holliday, M., Jones, C.M.,
+Mills, M.J., Moberly, S.A., Pollock, K.H., Talhelm, D.R. (Eds.), Creel and Angler
+Surveys in Fisheries Management American Fisheries Society, Symposium. American
+Fisheries Society, Bethseda, Maryland.
+C.M. Tucker et al.

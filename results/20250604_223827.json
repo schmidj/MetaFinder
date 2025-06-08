@@ -1,0 +1,56 @@
+{
+    "basic_info": {
+        "title": "The Effect of Shoreline Recreational Angling Activities on Aquatic and Riparian Habitat Within an Urban Environment: Implications for Conservation and Management",
+        "authors": [
+            "Amanda C. O'Toole",
+            "Kyle C. Hanson",
+            "Steven J. Cooke"
+        ],
+        "doi": "Springer Science+Business Media, LLC 2009",
+        "keywords": [
+            "Shoreline angling",
+            "Conservation",
+            "Riparian",
+            "Ecosystem health",
+            "Soil compaction",
+            "Angling litter",
+            "Macrophyte"
+        ],
+        "dates": {
+            "received": "1 June 2008",
+            "accepted": "2 April 2009",
+            "published": "19 May 2009"
+        }
+    },
+    "data_info": {
+        "variables": [
+            "water quality",
+            "soil compaction",
+            "discarded litter",
+            "macrophyte density and abundance",
+            "fish community"
+        ],
+        "spatial_extent": "Ottawa, Ontario, and Gatineau, Quebec, regions of Canada",
+        "temporal_extent": "July 16 to 27, 2007",
+        "sampling_resolution": {
+            "spatial": "0.25-m 2 quadrat",
+            "temporal": "not specified"
+        },
+        "sample_size": 28,
+        "collection_methods": [
+            "onshore sampling",
+            "aquatic sampling",
+            "fish community survey"
+        ],
+        "data_sources": [
+            "local conservation officer",
+            "local anglers",
+            "Ontario Ministry of Natural Resources"
+        ],
+        "limitations": [
+            "impossibility of measuring some variables at certain sites",
+            "confounding by other human use"
+        ]
+    },
+    "extraction_timestamp": "2025-06-04T22:38:27.961228"
+}
