@@ -1,0 +1,31 @@
+{
+    "basic_info": null,
+    "data_info": {
+        "variables": {
+            "Depression Score": {
+                "description": "a measure of depression severity",
+                "type": "continuous",
+                "source": "Beck Depression Inventory"
+            },
+            "Age": {
+                "description": "patient age",
+                "type": "categorical",
+                "source": "patient medical records"
+            },
+            "Treatment Type": {
+                "description": "type of treatment received",
+                "type": "categorical",
+                "source": "patient medical records"
+            }
+        },
+        "data_sources": [
+            "Beck Depression Inventory",
+            "patient medical records"
+        ],
+        "analysis_methods": [
+            "Regression Analysis",
+            "T-Test"
+        ]
+    },
+    "extraction_timestamp": "2025-06-08T12:32:32.655493"
+}
