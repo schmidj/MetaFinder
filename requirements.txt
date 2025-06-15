@@ -1,2 +1,6 @@
 gradio
 together
+faiss-cpu
+sentence-transformers
+torch
+numpy
