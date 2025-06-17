@@ -184,7 +184,7 @@
                 return;
             }
             resultsDiv.innerHTML = '';
-            data.forEach(result => {
+            data.forEach((result, idx) => {
                 const card = document.createElement('div');
                 card.className = 'card mb-3 shadow-sm';
                 // Zenodo badge if url contains 'zenodo.org'
@@ -192,10 +192,21 @@
                 const badge = isZenodo ? '<span class="badge bg-purple text-white ms-2">Zenodo</span>' : '';
                 // Render HTML description safely
                 const safeDescription = DOMPurify.sanitize(result.description || '');
+                // Always show RAG metadata if present
+                let ragSection = '';
+                if (isZenodo && result.rag_metadata) {
+                    ragSection = `
+                        <div class="card card-body mt-2" style="background:#f8f6ff;">
+                            <i class="fa fa-magic"></i> <strong>AI-extracted Metadata:</strong><br>
+                            ${DOMPurify.sanitize(result.rag_metadata)}
+                        </div>
+                    `;
+                }
                 card.innerHTML = `
                     <div class="card-body">
                         <h5 class="card-title">${result.source} ${badge}</h5>
                         <p class="card-text">${safeDescription}</p>
+                        ${ragSection}
                         <div class="row mb-2">
                             <div class="col-md-4"><small class="text-muted">Last Updated: ${result.last_updated}</small></div>
                             <div class="col-md-4"><small class="text-muted">Format: ${result.format}</small></div>

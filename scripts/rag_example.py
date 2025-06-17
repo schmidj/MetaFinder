@@ -82,6 +82,7 @@ def run_rag(data_dict: dict, prompt: str):
         "sentence-transformers/all-MiniLM-L6-v2",
         use_auth_token=os.environ.get("HUGGINGFACE_HUB_TOKEN"),
     )
+    embedding_model = embedding_model.to('cpu')
 
     # Stage 2: Process documents into Vector Database
     # ------------------------------------------------------------

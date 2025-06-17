@@ -2,6 +2,9 @@ from flask import Flask, render_template, request, jsonify
 import json
 from datetime import datetime
 import requests
+import sys
+sys.path.append('scripts')
+from rag_example import run_rag
 
 app = Flask(__name__)
 
@@ -58,12 +61,14 @@ def search_zenodo(query, max_results=5):
         results = []
         for item in items:
             metadata = item.get("metadata", {})
+            files = item.get("files", [])
+            size = str(files[0].get("size", "N/A")) if files else "N/A"
             results.append({
                 "source": metadata.get("title", "Unknown Title"),
                 "description": metadata.get("description", "No description."),
                 "last_updated": item.get("updated", "N/A")[:10],
                 "format": ", ".join(metadata.get("resource_type", {}).values()) if metadata.get("resource_type") else "N/A",
-                "size": str(item.get("files", [{}])[0].get("size", "N/A")),
+                "size": size,
                 "url": item.get("links", {}).get("html", "https://zenodo.org")
             })
         return results
@@ -93,8 +98,18 @@ def search():
                     results.append(source)
     # Search Zenodo and add results
     zenodo_results = search_zenodo(query)
+    print(f"Zenodo results fetched: {len(zenodo_results)}")  # Debug print
     print(f"Zenodo results: {zenodo_results}")  # Debug print
     results.extend(zenodo_results)
+
+    # RAG-based metadata extraction for each Zenodo result
+    for item in zenodo_results:
+        if item.get('description'):
+            print(f"Running RAG for: {item['source']}")
+            doc = {item['source']: item['description']}
+            rag_answer = run_rag(doc, query)
+            print(f"RAG answer for {item['source']}: {rag_answer}")
+            item['rag_metadata'] = rag_answer
     
     return jsonify(results)
 
