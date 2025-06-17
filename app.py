@@ -36,14 +36,23 @@ METADATA_DB = {
     ]
 }
 
+SUBSCRIPTIONS = []
+
 @app.route('/')
 def index():
     return render_template('index.html')
 
 @app.route('/search', methods=['POST'])
 def search():
+    print(f"Received form data: {request.form}")  # Debug print
     query = request.form.get('query', '').lower()
+    phone = request.form.get('phone', '').strip()
     results = []
+    
+    # Store subscription if phone number is provided
+    if phone:
+        SUBSCRIPTIONS.append({'query': query, 'phone': phone})
+        print(f"New subscription: {query} -> {phone}")
     
     # Search through metadata
     for category, sources in METADATA_DB.items():
