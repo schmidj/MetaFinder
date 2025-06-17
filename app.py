@@ -4,7 +4,7 @@ from datetime import datetime
 import requests
 import sys
 sys.path.append('scripts')
-from rag_example import run_rag
+from rag_zenodo import run_rag_zenodo
 
 app = Flask(__name__)
 
@@ -103,13 +103,7 @@ def search():
     results.extend(zenodo_results)
 
     # RAG-based metadata extraction for each Zenodo result
-    for item in zenodo_results:
-        if item.get('description'):
-            print(f"Running RAG for: {item['source']}")
-            doc = {item['source']: item['description']}
-            rag_answer = run_rag(doc, query)
-            print(f"RAG answer for {item['source']}: {rag_answer}")
-            item['rag_metadata'] = rag_answer
+    run_rag_zenodo(zenodo_results, query)
     
     return jsonify(results)
 

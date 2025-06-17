@@ -70,14 +70,12 @@ def load_documents(data_dict):
 def run_rag(data_dict: dict, prompt: str):
     """
     Run RAG system: process documents, create embeddings, search, and generate answer.
-
     """
 
     # Stage 0: Initialize Together AI client for LLM completions
     client = Together(api_key="407980b3daee11d57187bc919693b335417b40bb15d2ebe504ea8d7a4edb972b")#together_api_key)
 
     # Stage 1: Load sentence transformer model for creating embeddings
-    # ------------------------------------------------------------
     embedding_model = SentenceTransformer(
         "sentence-transformers/all-MiniLM-L6-v2",
         use_auth_token=os.environ.get("HUGGINGFACE_HUB_TOKEN"),
@@ -85,7 +83,6 @@ def run_rag(data_dict: dict, prompt: str):
     embedding_model = embedding_model.to('cpu')
 
     # Stage 2: Process documents into Vector Database
-    # ------------------------------------------------------------
     documents, filenames = load_documents(data_dict)
 
     if not documents:
@@ -106,7 +103,6 @@ def run_rag(data_dict: dict, prompt: str):
     print(f"✅ RAG system ready with {len(documents)} documents!")
 
     # Stage 3: Retrieve relevant documents
-    # ------------------------------------------------------------
     query_embedding = embedding_model.encode([prompt])
     faiss.normalize_L2(query_embedding)
 
@@ -114,7 +110,6 @@ def run_rag(data_dict: dict, prompt: str):
     scores, indices = index.search(query_embedding, min(3, len(documents)))
 
     # Stage 4: Build context from retrieved documents
-    # ------------------------------------------------------------
     relevant_docs = []
     context_parts = []
 
@@ -135,7 +130,6 @@ def run_rag(data_dict: dict, prompt: str):
     context = "\n\n".join(context_parts)
 
     # Stage 5: Augment by running the LLM to generate an answer
-    # ------------------------------------------------------------
     llm_prompt = f"""Answer the question based on the provided context documents.
 
 Context:
