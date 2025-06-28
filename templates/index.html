@@ -5,223 +5,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MetaFinder AI</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        body {
-            background: linear-gradient(120deg, #f8f9fa 60%, #f3f0ff 100%);
-            min-height: 100vh;
-        }
-        .navbar-brand {
-            font-weight: 700;
-            font-size: 1.5rem;
-            letter-spacing: -1px;
-        }
-        .navbar-brand i {
-            color: #7b47ff;
-            margin-right: 8px;
-        }
-        .hero {
-            padding: 4rem 0 2rem 0;
-            text-align: center;
-        }
-        .hero-badge {
-            background: #f3f0ff;
-            color: #7b47ff;
-            font-weight: 600;
-            border-radius: 999px;
-            padding: 0.4rem 1.2rem;
-            font-size: 1rem;
-            display: inline-block;
-            margin-bottom: 1.5rem;
-        }
-        .hero-title {
-            font-size: 3rem;
-            font-weight: 800;
-            line-height: 1.1;
-        }
-        .hero-title .highlight {
-            color: #7b47ff;
-        }
-        .hero-desc {
-            color: #555;
-            font-size: 1.2rem;
-            margin: 1.5rem 0 2.5rem 0;
-        }
-        .search-bar {
-            max-width: 600px;
-            margin: 0 auto 1rem auto;
-            display: flex;
-            box-shadow: 0 2px 16px rgba(123,71,255,0.07);
-        }
-        .search-bar input {
-            border-top-left-radius: 8px;
-            border-bottom-left-radius: 8px;
-            border-right: none;
-            font-size: 1.1rem;
-        }
-        .search-bar button {
-            border-top-right-radius: 8px;
-            border-bottom-right-radius: 8px;
-            background: #111;
-            color: #fff;
-            font-weight: 600;
-            border: none;
-        }
-        .search-bar button i {
-            margin-right: 6px;
-        }
-        .search-suggestion {
-            color: #888;
-            font-size: 0.98rem;
-            margin-bottom: 1.5rem;
-        }
-        .feature-badges {
-            margin-top: 1.5rem;
-            display: flex;
-            justify-content: center;
-            gap: 2.5rem;
-        }
-        .feature-badge {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            color: #7b47ff;
-            font-weight: 600;
-            font-size: 1.1rem;
-        }
-        .feature-badge i {
-            color: #7b47ff;
-            font-size: 1.3rem;
-        }
-        @media (max-width: 600px) {
-            .hero-title { font-size: 2rem; }
-            .feature-badges { flex-direction: column; gap: 1rem; }
-        }
-        .badge.bg-purple {
-            background: #7b47ff !important;
-            color: #fff !important;
-        }
+        body { background: #fafbfc; }
+        .hero-title { font-size: 2.5rem; font-weight: 700; }
+        .hero-title .highlight { color: #3b82f6; }
+        .feature-card { border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+        .icon-box { width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 8px; font-size: 1.5rem; }
+        .result-box { background: #fff; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); padding: 2rem; margin-top: 2rem; }
+        .form-control, .btn { border-radius: 8px; }
     </style>
 </head>
 <body>
-<nav class="navbar navbar-light bg-white shadow-sm py-3">
-    <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="#">
-            <i class="fas fa-search"></i> MetaFinder AI
-        </a>
-        <div class="d-flex align-items-center gap-3">
-            <a href="#" class="text-dark text-decoration-none">Features</a>
-            <a href="#" class="text-dark text-decoration-none">How it Works</a>
-            <a href="#" class="text-dark text-decoration-none">Pricing</a>
-            <button class="btn btn-outline-dark btn-sm me-2">Sign In</button>
-            <button class="btn btn-dark btn-sm">Get Started</button>
-        </div>
+<nav class="navbar navbar-light bg-white shadow-sm mb-4">
+  <div class="container-fluid">
+    <span class="navbar-brand mb-0 h1"><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4a1.svg" width="28" style="margin-right:8px;">MetaFinder AI</span>
+    <div>
+      <a href="#" class="me-3 text-decoration-none text-secondary">Features</a>
+      <a href="#" class="me-3 text-decoration-none text-secondary">How it Works</a>
+      <a href="#" class="me-3 text-decoration-none text-secondary">Pricing</a>
+      <a href="#" class="btn btn-outline-dark btn-sm me-2">Sign In</a>
+      <a href="#" class="btn btn-dark btn-sm">Get Started</a>
     </div>
+  </div>
 </nav>
-
-<section class="hero">
-    <div class="container">
-        <div class="hero-badge">
-            <i class="fa-solid fa-bolt"></i> AI-Powered Discovery
-        </div>
-        <h1 class="hero-title mb-3">
-            Discover Relevant <span class="highlight">Data<br>Sources</span> Instantly
-        </h1>
-        <div class="hero-desc">
-            Our AI scans millions of data platforms, technical reports, and research papers to find the most<br>
-            relevant metadata for your research topic. Save weeks of manual searching.
-        </div>
-        <form class="search-bar" id="searchForm" autocomplete="off" onsubmit="return false;">
-            <input type="text" id="searchInput" class="form-control" placeholder="Enter your research topic (e.g., climate change impacts on agriculture)">
-            <input type="tel" id="phoneInput" name="phone" class="form-control" placeholder="Phone number (for updates)" style="max-width:180px;">
-            <button class="btn" id="searchButton" type="submit"><i class="fas fa-search"></i>Search</button>
-        </form>
-        <div class="search-suggestion">
-            Try: <span style="color:#7b47ff">"machine learning in healthcare", "renewable energy datasets", "urban planning data"</span>
-        </div>
-        <div class="feature-badges">
-            <div class="feature-badge"><i class="fa-solid fa-database"></i> 50M+ Datasets</div>
-            <div class="feature-badge"><i class="fa-solid fa-file-lines"></i> 2M+ Technical Reports</div>
-            <div class="feature-badge"><i class="fa-solid fa-book"></i> 10M+ Research Papers</div>
-        </div>
+<div class="container">
+  <div class="text-center my-5">
+    <div class="mb-2 text-secondary small">AI-Powered Discovery</div>
+    <div class="hero-title mb-3">
+      Discover Relevant <span class="highlight">Data<br>Sources</span> Instantly
     </div>
-</section>
-
-<!-- Results Section (hidden by default, shown after search) -->
-<div class="container" id="resultsContainer" style="display:none;">
-    <div id="results"></div>
+    <div class="mb-4 text-secondary">
+      Our AI scans millions of data platforms, technical reports, and research papers to find the most relevant metadata for your research topic. Save weeks of manual searching.
+    </div>
+    <form method="POST" class="d-flex justify-content-center mb-2" style="max-width:600px;margin:auto;">
+      <input name="prompt" type="text" class="form-control me-2" placeholder="Enter your research topic (e.g., climate change impacts on ...)" required>
+      <button class="btn btn-dark" type="submit">Search</button>
+    </form>
+    <div class="text-muted small mb-2">Try: "machine learning in healthcare", "renewable energy datasets", "urban air quality data"</div>
+    <div class="mb-4">
+      <span class="badge bg-light text-dark border me-1">Code Datasets</span>
+      <span class="badge bg-light text-dark border me-1">Tab. Technical Reports</span>
+      <span class="badge bg-light text-dark border">Obs. Research Paper</span>
+    </div>
+  </div>
+  <div class="mb-5">
+    <h4 class="fw-bold text-center mb-4">Powerful AI-Driven Discovery</h4>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-4">
+        <div class="p-4 bg-white feature-card h-100">
+          <div class="icon-box bg-primary bg-opacity-10 text-primary mb-3"><i class="bi bi-lightbulb"></i></div>
+          <div class="fw-semibold mb-1">Smart Relevance Matching</div>
+          <div class="text-secondary small">AI understands semantic matching to find data sources that truly match your research need, not just keyword matches.</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 bg-white feature-card h-100">
+          <div class="icon-box bg-success bg-opacity-10 text-success mb-3"><i class="bi bi-globe"></i></div>
+          <div class="fw-semibold mb-1">Multi-Platform Coverage</div>
+          <div class="text-secondary small">Searches major open repositories, government databases, academic journals, and institutional archives simultaneously.</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 bg-white feature-card h-100">
+          <div class="icon-box bg-info bg-opacity-10 text-info mb-3"><i class="bi bi-clock-history"></i></div>
+          <div class="fw-semibold mb-1">Real-Time Updates</div>
+          <div class="text-secondary small">Continuously monitors new publications and datasets, alerting you when relevant content becomes available.</div>
+        </div>
+      </div>
+    </div>
+    <div class="row g-4 mt-1 justify-content-center">
+      <div class="col-md-4">
+        <div class="p-4 bg-white feature-card h-100">
+          <div class="icon-box bg-warning bg-opacity-10 text-warning mb-3"><i class="bi bi-archive"></i></div>
+          <div class="fw-semibold mb-1">Rich Metadata Extraction</div>
+          <div class="text-secondary small">Extracts comprehensive metadata including methodology, sample size, geographic coverage, and data quality indicators.</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 bg-white feature-card h-100">
+          <div class="icon-box bg-danger bg-opacity-10 text-danger mb-3"><i class="bi bi-people"></i></div>
+          <div class="fw-semibold mb-1">Collaboration Tools</div>
+          <div class="text-secondary small">Share findings with your team, enable collaboration, and annotate data on research projects with built-in annotation tools.</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 bg-white feature-card h-100">
+          <div class="icon-box bg-secondary bg-opacity-10 text-secondary mb-3"><i class="bi bi-plug"></i></div>
+          <div class="fw-semibold mb-1">API Integration</div>
+          <div class="text-secondary small">Integrate discovery capabilities directly into your research workflow with our comprehensive REST APIs and SDKs.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mb-5">
+    <h4 class="fw-bold text-center mb-4">How MetaFinder AI Works</h4>
+    <div class="row g-4 text-center">
+      <div class="col-md-4">
+        <div class="p-4 bg-white feature-card h-100">
+          <div class="icon-box bg-primary bg-opacity-10 text-primary mb-2"><i class="bi bi-1-circle"></i></div>
+          <div class="fw-semibold mb-1">Describe Your Topic</div>
+          <div class="text-secondary small">Enter your research topic in natural language. Our AI understands context, synonyms, and analytical concepts.</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 bg-white feature-card h-100">
+          <div class="icon-box bg-success bg-opacity-10 text-success mb-2"><i class="bi bi-2-circle"></i></div>
+          <div class="fw-semibold mb-1">AI Searches & Analyzes</div>
+          <div class="text-secondary small">Our algorithm scans millions of sources, analyzes relevance, and extracts comprehensive metadata in seconds.</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 bg-white feature-card h-100">
+          <div class="icon-box bg-info bg-opacity-10 text-info mb-2"><i class="bi bi-3-circle"></i></div>
+          <div class="fw-semibold mb-1">Get Curated Results</div>
+          <div class="text-secondary small">Receive ranked, relevant results with detailed metadata, access information, and quality assessments.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% if result %}
+  <div class="result-box">
+    <h5 class="mb-3">Ranked Datasets & Metadata</h5>
+    <pre style="white-space: pre-wrap;">{{ result }}</pre>
+  </div>
+  {% endif %}
 </div>
-
-<script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.5/dist/purify.min.js"></script>
-<script>
-    // Show results section and perform search
-    document.getElementById('searchForm').addEventListener('submit', function(e) {
-        e.preventDefault();
-        performSearch();
-    });
-    document.getElementById('searchInput').addEventListener('keypress', function(e) {
-        if (e.key === 'Enter') {
-            performSearch();
-        }
-    });
-    function performSearch() {
-        const query = document.getElementById('searchInput').value;
-        const phone = document.getElementById('phoneInput').value;
-        const resultsDiv = document.getElementById('results');
-        const resultsContainer = document.getElementById('resultsContainer');
-        if (!query.trim()) return;
-        resultsDiv.innerHTML = '<div class="text-center my-5"><div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div></div>';
-        resultsContainer.style.display = 'block';
-        fetch('/search', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            body: `query=${encodeURIComponent(query)}&phone=${encodeURIComponent(phone)}`
-        })
-        .then(response => response.json())
-        .then(data => {
-            if (data.length === 0) {
-                resultsDiv.innerHTML = '<div class="alert alert-warning text-center mt-4">No results found. Try different search terms.</div>';
-                return;
-            }
-            resultsDiv.innerHTML = '';
-            data.forEach((result, idx) => {
-                const card = document.createElement('div');
-                card.className = 'card mb-3 shadow-sm';
-                // Zenodo badge if url contains 'zenodo.org'
-                const isZenodo = result.url && result.url.includes('zenodo.org');
-                const badge = isZenodo ? '<span class="badge bg-purple text-white ms-2">Zenodo</span>' : '';
-                // Render HTML description safely
-                const safeDescription = DOMPurify.sanitize(result.description || '');
-                // Always show RAG metadata if present
-                let ragSection = '';
-                if (isZenodo && result.rag_metadata) {
-                    ragSection = `
-                        <div class="card card-body mt-2" style="background:#f8f6ff;">
-                            <i class="fa fa-magic"></i> <strong>AI-extracted Metadata:</strong><br>
-                            ${DOMPurify.sanitize(result.rag_metadata)}
-                        </div>
-                    `;
-                }
-                card.innerHTML = `
-                    <div class="card-body">
-                        <h5 class="card-title">${result.source} ${badge}</h5>
-                        <p class="card-text">${safeDescription}</p>
-                        ${ragSection}
-                        <div class="row mb-2">
-                            <div class="col-md-4"><small class="text-muted">Last Updated: ${result.last_updated}</small></div>
-                            <div class="col-md-4"><small class="text-muted">Format: ${result.format}</small></div>
-                            <div class="col-md-4"><small class="text-muted">Size: ${result.size}</small></div>
-                        </div>
-                        <a href="${result.url}" class="btn btn-outline-primary btn-sm" target="_blank">View Source</a>
-                    </div>
-                `;
-                resultsDiv.appendChild(card);
-            });
-        })
-        .catch(error => {
-            resultsDiv.innerHTML = '<div class="alert alert-danger text-center mt-4">An error occurred while searching. Please try again.</div>';
-        });
-    }
-</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </body>
 </html>

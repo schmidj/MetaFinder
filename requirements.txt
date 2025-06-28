@@ -1,3 +1,6 @@
+flask
+openai
+pymupdf
 gradio
 together
 faiss-cpu
